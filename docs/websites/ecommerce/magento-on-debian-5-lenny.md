@@ -10,7 +10,11 @@ aliases: ['web-applications/e-commerce/magento/debian-5-lenny/']
 modified: 2011-08-22
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2010-01-18
+=======
+published: 'Monday, January 18th, 2010'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'Magento on Debian 5 (Lenny)'
 ---
 

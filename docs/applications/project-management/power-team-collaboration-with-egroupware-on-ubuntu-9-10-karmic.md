@@ -10,7 +10,11 @@ aliases: ['web-applications/project-management/egroupware/ubuntu-9-10-karmic/']
 modified: 2011-08-22
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2010-02-01
+=======
+published: 'Monday, February 1st, 2010'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'Power Team Collaboration with eGroupware on Ubuntu 9.10 (Karmic)'
 ---
 

@@ -9,7 +9,11 @@ aliases: ['linux-tools/common-commands/ln/']
 modified: 2011-05-17
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2010-10-11
+=======
+published: 'Monday, October 11th, 2010'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: Create File System Links with ln
 ---
 
@@ -110,6 +114,11 @@ In most cases, symbolic links are preferable over hard links. There are some sit
     $ touch foo
 
     $ ls -l
+<<<<<<< HEAD
     total 8.0K
     -rw-r--r-- 2 username username 3 Aug 27 12:24 bar
+=======
+    total 8.0K 
+    -rw-r--r-- 2 username username 3 Aug 27 12:24 bar 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
     -rw-r--r-- 2 username username 3 Aug 27 12:24 foo

@@ -10,8 +10,12 @@ aliases: ['frameworks/django-apache-mod-python/ubuntu-9-04-jaunty/','websites/fr
 modified: 2011-05-17
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2009-08-31
 expiryDate: 2011-05-17
+=======
+published: 'Monday, August 31st, 2009'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'Django, Apache and mod_python on Ubuntu 9.04 (Jaunty)'
 ---
 

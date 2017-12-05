@@ -10,7 +10,11 @@ aliases: ['dns-guides/unbound-dns-resolver-ubuntu-9-10-karmic/']
 modified: 2013-07-15
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2010-09-07
+=======
+published: 'Tuesday, September 7th, 2010'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'Use Unbound for Local DNS Resolution on Ubuntu 9.10 (Karmic)'
 ---
 

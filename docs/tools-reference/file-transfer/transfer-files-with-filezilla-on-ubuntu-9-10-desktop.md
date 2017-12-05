@@ -10,7 +10,11 @@ aliases: ['networking/file-transfer/transfer-files-filezilla-ubuntu-9-10/']
 modified: 2011-08-22
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2009-11-13
+=======
+published: 'Friday, November 13th, 2009'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'Transfer Files with Filezilla on Ubuntu 9.10 Desktop'
 ---
 

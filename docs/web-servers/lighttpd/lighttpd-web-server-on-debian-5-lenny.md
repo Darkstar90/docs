@@ -10,7 +10,11 @@ aliases: ['web-servers/lighttpd/debian-5-lenny/','websites/lighttpd/lighttpd-web
 modified: 2011-08-22
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2009-08-06
+=======
+published: 'Thursday, August 6th, 2009'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'lighttpd Web Server on Debian 5 (Lenny)'
 ---
 

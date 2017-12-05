@@ -18,6 +18,12 @@ external_resources:
  - '[Fedora Wiki: FirewallD](https://fedoraproject.org/wiki/FirewallD)'
 ---
 
+<<<<<<< HEAD
+=======
+*This is a Linode Community guide. [Write for us](/docs/contribute) and earn $250 per published guide.*
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
+
+![Introduction to FirewallD on CentOS](/docs/assets/introduction-to-firewalld-on-centos.png "Introduction to FirewallD on CentOS")
 
 ![Introduction to FirewallD on CentOS](/docs/assets/introduction-to-firewalld-on-centos.png "Introduction to FirewallD on CentOS")
 

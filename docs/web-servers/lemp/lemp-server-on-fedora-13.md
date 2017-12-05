@@ -10,7 +10,11 @@ aliases: ['lemp-guides/fedora-13/','websites/lemp/lemp-server-on-fedora-13/']
 modified: 2011-05-03
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2010-06-30
+=======
+published: 'Wednesday, June 30th, 2010'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: LEMP Server on Fedora 13
 ---
 

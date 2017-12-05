@@ -3,6 +3,7 @@ author:
   name: Quintin Riis
   email: docs@linode.com
 description: Mosh is a free alternative to SSH. This guide will teach you how to install and configure Mosh on Linux distributions and your desktop.
+<<<<<<< HEAD:docs/networking/ssh/install-mosh-server-as-ssh-alternative-on-linux.md
 keywords: ["mosh", " ssh", ""]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 aliases: ['networking/mosh/','networking/ssh/mosh/', 'tools-reference/ssh/mosh/', 'tools-reference/ssh/install-mosh-server-as-ssh-alternative-on-linux/']
@@ -10,6 +11,15 @@ modified: 2017-08-18
 modified_by:
   name: Linode
 published: 2013-01-20
+=======
+keywords: 'mosh, ssh,'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+alias: ['networking/mosh/','networking/ssh/mosh/', 'tools-reference/ssh/mosh/']
+modified: Friday, August 18th, 2017
+modified_by:
+  name: Linode
+published: 'Sunday, January 20th, 2013'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/networking/ssh/install-mosh-server-as-ssh-alternative-on-linux.md
 title: Install a Mosh Server as SSH Alternative on Linux
 ---
 
@@ -38,6 +48,14 @@ Before installing Mosh, you should verify that your Linode's firewall will allow
 
 {{< /file-excerpt >}}
 
+<<<<<<< HEAD:docs/networking/ssh/install-mosh-server-as-ssh-alternative-on-linux.md
+=======
+{: .file-excerpt }
+/etc/iptables.firewall.rules
+: ~~~
+	-A INPUT -p udp --dport 60000:61000 -j ACCEPT
+  ~~~
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/networking/ssh/install-mosh-server-as-ssh-alternative-on-linux.md
 
 Activate the new firewall rule by entering the following command:
 
@@ -66,11 +84,19 @@ Mosh is available in Debian's backports repositories. You'll need to add squeeze
 
 1.  Edit `/etc/apt/sources.list` and add the following line:
 
+<<<<<<< HEAD:docs/networking/ssh/install-mosh-server-as-ssh-alternative-on-linux.md
     {{< file-excerpt "/etc/apt/sources.list" >}}
 deb <http://backports.debian.org/debian-backports> squeeze-backports main
 
 {{< /file-excerpt >}}
 
+=======
+    {: .file-excerpt }
+    /etc/apt/sources.list
+    : ~~~
+        deb <http://backports.debian.org/debian-backports> squeeze-backports main
+      ~~~
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/networking/ssh/install-mosh-server-as-ssh-alternative-on-linux.md
 
 2.  Run `apt-get update`.
 3.  Install mosh from squeeze-backports by entering the following command:

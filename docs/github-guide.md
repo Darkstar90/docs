@@ -8,7 +8,11 @@ license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 modified: 2015-12-02
 modified_by:
     name: Linode
+<<<<<<< HEAD
 published: 2015-12-02
+=======
+published: 'Wednesday, December 2nd, 2015'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: GitHub Beginner's Guide
 ---
 

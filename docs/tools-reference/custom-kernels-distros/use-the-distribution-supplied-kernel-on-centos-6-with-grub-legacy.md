@@ -5,10 +5,17 @@ author:
 description: 'Configure your CentOS 6 Linode to use the distribution-supplied kernel'
 keywords: ["centos 6", " custom kernel", " grub legacy"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+<<<<<<< HEAD
 modified: 2017-03-10
 modified_by:
   name: Nick Brewer
 published: 2017-03-10
+=======
+modified: 'Friday, March 10th, 2017'
+modified_by:
+  name: Nick Brewer
+published: 'Friday, March 10th, 2017'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'Use the Distribution-Supplied Kernel on CentOS 6 with Grub Legacy'
 deprecated: false
 ---

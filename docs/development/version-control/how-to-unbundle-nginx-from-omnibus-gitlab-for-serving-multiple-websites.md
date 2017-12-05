@@ -9,7 +9,11 @@ aliases: ['applications/development/how-to-unbundle-nginx-from-omnibus-gitlab-fo
 contributor:
     name: Jordi Bassagañas
     link: https://twitter.com/programarivm
+<<<<<<< HEAD
 modified: 2017-06-21
+=======
+modified: Wednesday, June 21st, 2017
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 modified_by:
   name: Phil Zona
 published: 2016-02-29
@@ -23,7 +27,11 @@ external_resources:
 Omnibus GitLab is a software package (or software stack) that allows you to easily install and run GitLab on your Linode.
 This guide walks you through the process of installing and setting up your own nginx server on a typical Omnibus installation. Using the method outlined here, you are not forced to use Omnibus's default settings, and can create as many virtual hosts as you need for hosting multiple websites and apps on the same server as your GitLab.
 
+<<<<<<< HEAD
 Preconfigured software stacks sometimes bring a series of challenges to those who need to customize specific settings. If you require more control over your installation, consider [installing GitLab from source](/docs/applications/development/how-to-install-and-configure-gitlab-on-ubuntu-14-04-trusty-tahr). This application stack could benefit from large amounts of disk space, so also consider using our [Block Storage](/docs/platform/how-to-use-block-storage-with-your-linode) service with this setup.
+=======
+Preconfigured software stacks sometimes bring a series of challenges to those who need to customize specific settings. If you require more control over your installation, consider [installing GitLab from source](/docs/applications/development/how-to-install-and-configure-gitlab-on-ubuntu-14-04-trusty-tahr "How to Install and Configure GitLab on Ubuntu 14.04 (Trusty Tahr)"). This application stack could benefit from large amounts of disk space, so also consider using our [Block Storage](/docs/platform/how-to-use-block-storage-with-your-linode) service with this setup.
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 
 ## Before You Begin

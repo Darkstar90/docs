@@ -10,7 +10,11 @@ aliases: ['email/citadel/ubuntu-9-10-karmic/']
 modified: 2011-05-17
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2009-11-09
+=======
+published: 'Monday, November 9th, 2009'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'Email with Citadel on Ubuntu 9.10 (Karmic)'
 ---
 

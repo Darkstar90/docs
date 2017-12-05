@@ -196,7 +196,10 @@ You'll be prompted to enter a path where you'd like to place the file on your Li
 {{< caution >}}
 When uploading a public key with WinSCP, make sure you are using a txt formatted file. If your public key is saved in a different format, such as .rtf or .doc, extra formatting characters will be added and your private key will not work properly.
 
+<<<<<<< HEAD
 When you create the text file, make sure the public key is a single line of text, exactly as it appears in the PuTTY key generator.
 {{< /caution >}}
 
+=======
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 You should now be connected to your Linode using the SSH key.

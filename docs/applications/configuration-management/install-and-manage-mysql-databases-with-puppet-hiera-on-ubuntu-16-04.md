@@ -3,10 +3,17 @@ author:
     name: Linode Community
     email: docs@linode.com
 description: 'Use this guide to install Puppet with MySQL modules and Puppet Hiera configuration manifests to manage MySQL in a variety of environments.'
+<<<<<<< HEAD
 keywords: ["puppet installation", "configuration change management", "server automation", "mysql", "database", "hiera"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 published: 2017-09-11
 modified: 2017-09-11
+=======
+keywords: 'puppet installation,configuration change management,server automation,mysql,database,hiera'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+published: Monday, September 11, 2017
+modified: Monday, September 11, 2017
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 modified_by:
     name: Linode
 title: Install and Manage MySQL Databases with Puppet Hiera on Ubuntu 16.04
@@ -21,6 +28,12 @@ external_resources:
   - '[Facter](https://docs.puppet.com/facter/)'
 ---
 
+<<<<<<< HEAD
+=======
+*This is a Linode Community guide. If you're an expert on something for which we need a guide, you too can [get paid to write for us](/docs/contribute).*
+
+----
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 ![Install and Manage MySQL Databases with Puppet Hiera on Ubuntu 16.04](/docs/assets/puppet/manage-mysql-with-puppet-hiera.jpg "Install and Manage MySQL Databases with Puppet Hiera on Ubuntu 16.04")
 
@@ -28,9 +41,14 @@ external_resources:
 
 In this guide, you'll use Puppet to deploy [modules](https://docs.puppet.com/puppet/latest/modules_fundamentals.html) on your server. At the end, you will have MySQL installed, configured, and ready to use for a variety of applications that require a database backend.
 
+<<<<<<< HEAD
 {{< note >}}
 This guide is written for a non-root user. Commands that require elevated privileges are prefixed with `sudo`. If you're not familiar with the `sudo` command, see the [Users and Groups](/docs/tools-reference/linux-users-and-groups) guide.
 {{< /note >}}
+=======
+{: .note}
+> This guide is written for a non-root user. Commands that require elevated privileges are prefixed with `sudo`. If you're not familiar with the `sudo` command, see the [Users and Groups](/docs/tools-reference/linux-users-and-groups) guide.
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 ## Before You Begin
 
@@ -85,11 +103,19 @@ While the entirety of a Puppet *manifest* can contain the desired configuration 
 
 To apply the `mysql::server` class to all hosts by default, create the following Puppet manifest:
 
+<<<<<<< HEAD
 {{< file "/etc/puppetlabs/code/environments/production/manifests/site.pp" puppet >}}
 include ::mysql::server
 
 {{< /file >}}
 
+=======
+{: .file}
+/etc/puppetlabs/code/environments/production/manifests/site.pp
+:  ~~~ pp
+   include ::mysql::server
+   ~~~
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 Note that `site.pp` is the default manifest file. Without a qualifying `node { .. }` line, this applies the class to any host applying the manifest. Puppet now knows to apply the `mysql::server` class, but still needs values for resources like databases, users, and other settings. Configure Hiera to provide these values in the next section.
 
@@ -97,6 +123,7 @@ Note that `site.pp` is the default manifest file. Without a qualifying `node { .
 
 To understand how Hiera works, consider this excerpt from the default `hiera.yaml` file:
 
+<<<<<<< HEAD
 {{< file-excerpt "/etc/puppetlabs/puppet/hiera.yaml" yaml >}}
 ---
 :backends:
@@ -107,6 +134,18 @@ To understand how Hiera works, consider this excerpt from the default `hiera.yam
 
 {{< /file-excerpt >}}
 
+=======
+{: .file-excerpt}
+/etc/puppetlabs/puppet/hiera.yaml
+:  ~~~ yaml
+   ---
+   :backends:
+     - yaml
+   :hierarchy:
+     - "nodes/%{::trusted.certname}"
+     - common
+   ~~~
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 This Hiera configuration instructs Puppet to accept variable values from `nodes/%{::trusted.certname}.yaml`. If your Linode's hostname is `examplehostname`, define a file called `nodes/examplehostname.yaml`). Any variables found in yaml files higher in the hierarchy are preferred, while any variable names that do not exist in those files will fall-through to files lower in the hierarchy (in this example, `common.yaml`).
 
@@ -116,6 +155,7 @@ The following configuration will define Puppet variables in `common.yaml` to inj
 
 Hiera configuration files are formatted as yaml, with keys defining the Puppet parameters to inject their associated values. To get started,  set the MySQL root password. The following example of a Puppet manifest is one way to control this password:
 
+<<<<<<< HEAD
 {{< file ":   ~~~ pp" >}}
 We can also define the root password with the following Hiera configuration file. Create the following yaml file and note how the `root_password` parameter is defined as Hiera yaml:
 
@@ -126,6 +166,20 @@ We can also define the root password with the following Hiera configuration file
 
 {{< /file >}}
  yaml
+=======
+{: .file}
+:   ~~~ pp
+    class { '::mysql::server':
+      root_password => 'examplepassword',
+    }
+    ~~~
+
+We can also define the root password with the following Hiera configuration file. Create the following yaml file and note how the `root_password` parameter is defined as Hiera yaml:
+
+{: .file}
+/etc/puppetlabs/code/environments/production/hieradata/common.yaml
+:   ~~~ yaml
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
     mysql::server::root_password: examplepassword
     ~~~
 
@@ -156,6 +210,7 @@ Using Hiera, we can define the rest of the MySQL configuration entirely in yaml.
 
 2.  With the MySQL password hash ready, we can define Hiera values. The following yaml defines parameters to create a database called `wordpress` and a user named `wpuser` that has permission to connect from `localhost`. The yaml also defines a `GRANT` allowing `wpuser` to operate on the `wordpress` database with `ALL` permissions:
 
+<<<<<<< HEAD
     {{< file "/etc/puppetlabs/code/environments/production/hieradata/common.yaml" yaml >}}
 mysql::server::root_password: examplepassword
 mysql::server::databases:
@@ -174,6 +229,26 @@ mysql::server::grants:
 
 {{< /file >}}
 
+=======
+    {: .file}
+    /etc/puppetlabs/code/environments/production/hieradata/common.yaml
+    :   ~~~ yaml
+        mysql::server::root_password: examplepassword
+        mysql::server::databases:
+          wordpress:
+            ensure: present
+        mysql::server::users:
+          wpuser@localhost:
+            ensure: present
+            password_hash: '*E62D3F829F44A91CC231C76347712772B3B9DABC'
+        mysql::server::grants:
+          wpuser@localhost/wordpress.*:
+            ensure: present
+            privileges: ALL
+            table: wordpress.*
+            user: wpuser@localhost
+        ~~~
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 3.  Re-run Puppet:
 
@@ -195,6 +270,7 @@ In the following example, Puppet will configure the MySQL server with one additi
 
 1.  Modify `hiera.yaml` to contain the following:
 
+<<<<<<< HEAD
     {{< file "/etc/puppetlabs/puppet/hiera.yaml" yaml >}}
 ---
 :backends:
@@ -205,11 +281,24 @@ In the following example, Puppet will configure the MySQL server with one additi
 
 {{< /file >}}
 
+=======
+    {: .file}
+    /etc/puppetlabs/puppet/hiera.yaml
+    :   ~~~ yaml
+        ---
+        :backends:
+          - yaml
+          :hierarchy:
+          - "%{facts.os.family}"
+          - common
+        ~~~
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
     This change instructs Hiera to look for Puppet parameters first in `"%{facts.os.family}.yaml"` and then in `common.yaml`. The first, fact-based element of the hierarchy is dynamic, and dependent upon the host that Puppet and Hiera control. In this Ubuntu-based example, Hiera will look for `Debian.yaml`, while on a distribution such as CentOS, the file `RedHat.yaml` will automatically be referenced instead.
 
 2.  Create the following yaml file:
 
+<<<<<<< HEAD
     {{< file "/etc/puppetlabs/code/environments/production/hieradata/Debian.yaml" yaml >}}
 lookup_options:
   mysql::server::databases:
@@ -221,6 +310,19 @@ lookup_options:
 
 {{< /file >}}
 
+=======
+    {: .file}
+    /etc/puppetlabs/code/environments/production/hieradata/Debian.yaml
+    :   ~~~ yaml
+        lookup_options:
+          mysql::server::databases:
+            merge: deep
+
+          mysql::server::databases:
+            ubuntu-backup:
+              ensure: present
+        ~~~
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
     Though similar to the `common.yaml` file defined in previous steps, this file will add the `ubuntu-backup` database *only* on Debian-based hosts (like Ubuntu). In addition, the `lookup_options` setting ensures that the `mysql::server:databases` parameter is *merged* between `Debian.yaml` and `common.yaml` so that all databases are managed. Without `lookup_options` set to deeply merge these hashes, only the most specific hierarchy file will be applied to the host, in this case, `Debian.yaml`.
 

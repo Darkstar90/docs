@@ -3,6 +3,7 @@ author:
     name: Elle Krout
     email: ekrout@linode.com
 description: 'Learn how to efficiently use Puppet modules to manage files and services, create templates, and store data in Hiera in this simple tutorial.'
+<<<<<<< HEAD:docs/applications/configuration-management/use-puppet-modules-to-create-a-lamp-stack.md
 keywords: ["puppet", "automation", "puppet master", "puppet agent", "modules", "server automation", "configuration management"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 aliases: ['applications/puppet/create-puppet-module/','applications/configuration-management/create-puppet-module/']
@@ -10,6 +11,15 @@ modified: 2015-11-12
 modified_by:
     name: Elle Krout
 published: 2015-11-12
+=======
+keywords: 'puppet,automation,puppet master,puppet agent,modules,server automation,configuration management'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+alias: ['applications/puppet/create-puppet-module/','applications/configuration-management/create-puppet-module/']
+modified: Thursday, November 12th, 2015
+modified_by:
+    name: Elle Krout
+published: 'Thursday, November 12th, 2015'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/applications/configuration-management/use-puppet-modules-to-create-a-lamp-stack.md
 title: Use Puppet Modules to Create a LAMP Stack
 ---
 

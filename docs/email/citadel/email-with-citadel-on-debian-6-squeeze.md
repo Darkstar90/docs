@@ -10,7 +10,11 @@ aliases: ['email/citadel/debian-6-squeeze/']
 modified: 2011-11-09
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2011-11-09
+=======
+published: 'Wednesday, November 9th, 2011'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'Email with Citadel on Debian 6 (Squeeze)'
 ---
 

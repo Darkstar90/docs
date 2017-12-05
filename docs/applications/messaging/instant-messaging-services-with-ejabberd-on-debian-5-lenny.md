@@ -10,7 +10,11 @@ aliases: ['communications/xmpp/ejabberd/debian-5-lenny/']
 modified: 2011-08-22
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2009-10-07
+=======
+published: 'Wednesday, October 7th, 2009'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'Instant Messaging Services with ejabberd on Debian 5 (Lenny)'
 ---
 

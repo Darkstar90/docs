@@ -10,7 +10,11 @@ aliases: ['frameworks/django-apache-mod-python/ubuntu-9-10-karmic/','websites/fr
 modified: 2011-05-17
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2010-02-05
+=======
+published: 'Friday, February 5th, 2010'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'Django, Apache and mod_python on Ubuntu 9.10 (Karmic)'
 ---
 

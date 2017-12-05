@@ -6,6 +6,7 @@ contributor:
   name: Jack Wallen
   link: https://twitter.com/jlwallen
 description: 'An introduction to deploying and using Docker containers on your Linode.'
+<<<<<<< HEAD
 keywords: ["docker", "container", "dockerfile", "nginx container"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 modified: 2017-07-19
@@ -17,6 +18,20 @@ external_resources:
  - '[Docker Docs](http://docs.docker.com/)'
  - '[Docker Try it Tutorial](https://www.docker.com/tryit/)'
  - '[Docker Hub](https://hub.docker.com/)'
+=======
+keywords: 'docker,container,dockerfile,nginx container'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+modified: Wednesday, July 19, 2017
+modified_by:
+  name: Linode
+published: 'Wednesday, July 19, 2017'
+title: 'How to Deploy an nginx Container with Docker on Linode'
+external_resources:
+ - '[Docker Docs](http://docs.docker.com/)'
+ -  - '[Docker Try it Tutorial](https://www.docker.com/tryit/)'
+ -  - '[Docker Hub](https://hub.docker.com/)'
+  
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 ---
 
 ![How to Deploy Docker Containers](/docs/assets/docker/deploy_docker_container.jpg)
@@ -31,9 +46,15 @@ According to Docker.com, a container is a "lightweight, stand-alone, executable 
 Deploy a Docker container using the following syntax:
 
     docker run –name CONTAINER-NAME -p NETWORK_PORT:CONTAINER_PORT IMAGE NAME
+<<<<<<< HEAD
 
 It consists of:
 
+=======
+	
+It consists of:
+	
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 *  `CONTAINER-NAME`: The name you give the container.
 *  `NETWORK_PORT`: A port available to the network.
 *  `CONTAINER_PORT`: The port the container will listen on.
@@ -41,7 +62,11 @@ It consists of:
 
 ## Deploy a Container
 
+<<<<<<< HEAD
 This example will create an nginx container with port 80 exposed, using the official nginx image.
+=======
+This example will create an nginx container with port 80 exposed, using the official nginx image. 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 1.  Confirm the current, existing official image:
 

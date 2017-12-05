@@ -3,13 +3,22 @@ author:
   name: Alex Fornuto
   email: docs@linode.com
 description: 'Use the graphic shell, Glish, to Manage Graphic Environments on Your Linode.'
+<<<<<<< HEAD:docs/networking/using-the-linode-graphical-shell-glish.md
 keywords: ["Console", "Shell", "glish", "graphic"]
 aliases: ['networking/using-the-graphic-shell-glish/','networking/use-the-graphic-shell-glish/']
+=======
+keywords: 'Console,Shell,glish,graphic'
+alias: ['networking/using-the-graphic-shell-glish/','networking/use-the-graphic-shell-glish/']
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/networking/using-the-linode-graphical-shell-glish.md
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 modified: 2015-03-09
 modified_by:
   name: Linode
+<<<<<<< HEAD:docs/networking/using-the-linode-graphical-shell-glish.md
 published: 2015-08-28
+=======
+published: 'Friday, August 28th, 2015'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/networking/using-the-linode-graphical-shell-glish.md
 title: 'Using the Linode Graphical Shell (Glish)'
 ---
 

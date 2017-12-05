@@ -10,7 +10,11 @@ aliases: ['databases/redis/centos-5/']
 modified: 2013-07-07
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2010-08-05
+=======
+published: 'Thursday, August 5th, 2010'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: Redis on CentOS 5
 external_resources:
  - '[Redis Project Home Page](http://redis.io/)'

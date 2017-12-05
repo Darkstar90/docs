@@ -4,12 +4,21 @@ author:
   email: docs@linode.com
 description: 'This tutorial will teach you basic installation and configuration of a Minecraft server on Ubuntu and Debian
 distributions'
+<<<<<<< HEAD:docs/game-servers/how-to-set-up-minecraft-server-on-ubuntu-or-debian.md
 aliases: ['applications/game-servers/minecraft-on-debian-and-ubuntu/','game-servers/minecraft-on-debian-and-ubuntu/']
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 modified: 2017-07-30
 modified_by:
   name: Linode
 published: 2015-01-28
+=======
+alias: ['applications/game-servers/minecraft-on-debian-and-ubuntu/','game-servers/minecraft-on-debian-and-ubuntu/']
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+modified: Monday, July 30th, 2017
+modified_by:
+  name: Linode
+published: 'Wednesday, January 28, 2015'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/game-servers/how-to-set-up-minecraft-server-on-ubuntu-or-debian.md
 title: 'How to Set Up a Minecraft Server on Ubuntu or Debian'
 external_resources:
  - '[Minecraft.net](https://minecraft.net/)'
@@ -18,9 +27,13 @@ external_resources:
  - '[Documentation on the World of Color Update](http://minecraft.gamepedia.com/1.12)'
 ---
 
+<<<<<<< HEAD:docs/game-servers/how-to-set-up-minecraft-server-on-ubuntu-or-debian.md
 ![Set Up a Minecraft Server](/docs/assets/how-to-set-up-minecraft-server-on-ubuntu-or-debian/How_to_Set_Up_a_Minecraft_Server_smg.jpg)
 
 Minecraft is one of the most popular games in the world, with over 100 million users. In Minecraft you and other players are free to build and explore anything you want in a 3D generated world. If you host your own Minecraft server, you decide the rules, and you and your friends can play together in this interactive adventure game.
+=======
+Minecraft is one of the most popular games in the world with over 100 million users. In Minecraft you and other players are free to build and explore anything you want in a 3D generated world. If you host your own Minecraft server, you decide the rules, and you and your friends can play together in this interactive adventure game. 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/game-servers/how-to-set-up-minecraft-server-on-ubuntu-or-debian.md
 
 This guide shows you how to set up a personal [Minecraft](https://minecraft.net/game) server on a Linode running Debian 8 or Ubuntu 16.04 LTS. We have updated this guide to be compatible with the major release of 1.12: The World of Color Update.
 
@@ -36,17 +49,28 @@ This guide shows you how to set up a personal [Minecraft](https://minecraft.net/
 
 3.  Install *OpenJDK*, an open-source implementation of Java, and the GNU Screen package.
 
+<<<<<<< HEAD:docs/game-servers/how-to-set-up-minecraft-server-on-ubuntu-or-debian.md
 	{{< note >}}
 Minecraft version 1.12 is only compatible with OpenJDK 8. If you are using OpenJDK 7 you must remove it using this command
 `sudo apt remove openjdk-7-\*` before continuing with this guide.
 {{< /note >}}
+=======
+	{: .note}
+	> Minecraft version 1.12 is only compatible with OpenJDK 8. If you are using OpenJDK 7 you must remove it using this command
+	> `sudo apt remove openjdk-7-\*` before continuing with this guide.
+ 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/game-servers/how-to-set-up-minecraft-server-on-ubuntu-or-debian.md
 
     - In Ubuntu 16.04:
 
           sudo apt install openjdk-8-jre-headless screen
 
     - In Debian 8:
+<<<<<<< HEAD:docs/game-servers/how-to-set-up-minecraft-server-on-ubuntu-or-debian.md
 
+=======
+ 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/game-servers/how-to-set-up-minecraft-server-on-ubuntu-or-debian.md
           sudo apt install openjdk-8-jre-headless screen
 
 4.  Create a new user for Minecraft to run as:
@@ -58,9 +82,12 @@ Minecraft version 1.12 is only compatible with OpenJDK 8. If you are using OpenJ
 {{< note >}}
 If you have a firewall configured according to our [Securing Your Server](/docs/security/securing-your-server) guide, add the following line to your `iptables.firewall.rules` file to add an exception for port 25565:
 
+<<<<<<< HEAD:docs/game-servers/how-to-set-up-minecraft-server-on-ubuntu-or-debian.md
 -A INPUT -p tcp --dport 25565 -j ACCEPT
 {{< /note >}}
 
+=======
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/game-servers/how-to-set-up-minecraft-server-on-ubuntu-or-debian.md
 ## Install Minecraft
 
 1.  Exit your current SSH session and log back in to your Linode as the `minecraft` user.
@@ -80,7 +107,12 @@ cd "$BINDIR"
 
 java -Xms1024M -Xmx1536M -jar minecraft_server.1.12.jar -o true
 
+<<<<<<< HEAD:docs/game-servers/how-to-set-up-minecraft-server-on-ubuntu-or-debian.md
 {{< /file >}}
+=======
+        java -Xms1024M -Xmx1536M -jar minecraft_server.1.12.jar -o true
+        ~~~
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/game-servers/how-to-set-up-minecraft-server-on-ubuntu-or-debian.md
 
 
     {{< note >}}

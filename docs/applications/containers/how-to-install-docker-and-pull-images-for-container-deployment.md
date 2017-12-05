@@ -6,12 +6,21 @@ contributor:
   name: Jack Wallen
   link: https://twitter.com/jlwallen
 description: 'An introduction to using Docker, containers, and dockerfiles on your Linode.'
+<<<<<<< HEAD
 keywords: ["docker", "container", "dockerfile", "install docker"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 published: 2017-07-17
 modified: 2017-10-23
 modified_by:
   name: Linode
+=======
+keywords: 'docker,container,dockerfile,install docker'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+modified: Monday, July 17, 2017
+modified_by:
+  name: Linode
+published: 'Monday, July 17, 2017'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'How to Install Docker and Pull Images for Container Deployment'
 external_resources:
  - '[Docker Docs](http://docs.docker.com/)'
@@ -32,6 +41,7 @@ In this guide, you'll install Docker and pull down images that can be deployed a
 
         apt update && apt upgrade
 
+<<<<<<< HEAD
 {{< note >}}
 The steps in this guide require root privileges. Be sure to run the steps below as `root` or with the `sudo` prefix. For more information on privileges, see our [Users and Groups](/docs/tools-reference/linux-users-and-groups) guide.
 {{< /note >}}
@@ -82,6 +92,27 @@ sub   4096R/F273FCD8 2017-02-22
 
         docker run hello-world
 
+=======
+{: .note}
+> The steps in this guide require root privileges. Be sure to run the steps below as `root` or with the `sudo` prefix. For more information on privileges, see our [Users and Groups](/docs/tools-reference/linux-users-and-groups) guide.
+
+## Getting Started
+
+Install Docker:
+
+    apt install docker.io
+
+You will be presented with all necessary dependencies and asked to accept the installation. Type `y` to accept and complete the installation.
+
+{:.note}
+>
+>If you are using CentOS 7, use `sudo yum check-update && curl-fsSL https://get.docker.com/ | sh`
+
+Docker installation adds the group `docker` to your Linode. Create the user `exampleuser`, give it `sudo` privileges, and add it to the Docker group:
+
+    adduser exampleuser
+    usermod -aG docker exampleuser
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 ## Start and Enable Docker
 
@@ -100,7 +131,11 @@ The first thing you are going to want to do is pull down an image to be used as 
 
     ![List Docker Images](/docs/assets/docker/docker-install-images-list.jpg "List Docker Images")
 
+<<<<<<< HEAD
 2. Pull the [nginx web server](https://nginx.org/en/), using the `docker pull` command:
+=======
+2. Pull the [nginx web server](https://nginx.org/en/), using the `docker pull` command: 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
         docker pull nginx
 
@@ -114,7 +149,11 @@ The first thing you are going to want to do is pull down an image to be used as 
 
 ### Find Unofficial nginx Images
 
+<<<<<<< HEAD
 Alternatively, if you don't want to install the official nginx image, use `docker search` to find other nginx images:
+=======
+Alternatively, if you don't want to install the official nginx image, use `docker search` to find other nginx images: 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
     docker search nginx
 
@@ -126,6 +165,10 @@ Use `docker pull` to pull one of the other images:
 
     docker pull blacklabelops/nginx
 
+<<<<<<< HEAD
 ## Ready to Keep Going?
+=======
+## Ready to Keep Going? 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 At this point, you should know how to install Docker and pull down images with which you can then deploy containers. Use `man docker` to dive into the manual or visit our other [Docker Guides](/docs/applications/containers/) to learn more.

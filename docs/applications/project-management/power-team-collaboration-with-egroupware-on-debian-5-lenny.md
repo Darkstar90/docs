@@ -10,7 +10,11 @@ aliases: ['web-applications/project-management/egroupware/debian-5-lenny/']
 modified: 2011-08-22
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2010-01-26
+=======
+published: 'Tuesday, January 26th, 2010'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'Power Team Collaboration with eGroupware on Debian 5 (Lenny)'
 ---
 

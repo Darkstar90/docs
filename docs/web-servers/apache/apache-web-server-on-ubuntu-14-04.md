@@ -5,11 +5,19 @@ author:
 description: 'Install Apache on your Ubuntu 14.04 (Trusty Tahr) server, configure virtual hosting, and set up modules and scripting.'
 keywords: ["apache", "ubuntu", "ubuntu 14.04", "trusty tahr", "http", "web server"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+<<<<<<< HEAD
 aliases: ['websites/apache/apache-web-server-on-ubuntu-14-04/']
 modified: 2017-09-05
 modified_by:
   name: Linode
 published: 2015-07-31
+=======
+alias: ['websites/apache/apache-web-server-on-ubuntu-14-04/']
+modified: Tuesday, September 5, 2017
+modified_by:
+  name: Linode
+published: 'Friday, July 31st, 2015'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'Apache Web Server on Ubuntu 14.04 LTS'
 external_resources:
  - '[Apache HTTP Server Version 2.4 Documentation](http://httpd.apache.org/docs/2.4/)'

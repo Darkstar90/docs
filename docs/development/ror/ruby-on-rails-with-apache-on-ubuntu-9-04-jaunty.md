@@ -10,7 +10,11 @@ aliases: ['frameworks/ruby-on-rails-apache/ubuntu-9-04-jaunty/','websites/ror/ru
 modified: 2011-05-17
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2009-08-13
+=======
+published: 'Thursday, August 13th, 2009'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'Ruby on Rails with Apache on Ubuntu 9.04 (Jaunty)'
 external_resources:
   - '[Ruby on Rails Homepage](http://rubyonrails.org/)'

@@ -6,11 +6,19 @@ author:
 description: 'An overview of Installing Docker, with an example use case for Nginx'
 keywords: ["docker", " ubuntu", " 12.04", " centos", " container"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+<<<<<<< HEAD:docs/applications/containers/what-is-docker.md
 modified: 2014-01-28
 modified_by:
   name: Alex Fornuto
 aliases: ['containers/docker/','applications/containers/docker.md/']
 published: 2014-01-28
+=======
+modified: Tuesday, January 28th, 2014
+modified_by:
+  name: Alex Fornuto
+alias: ['containers/docker/','applications/containers/docker.md/']
+published: 'Tuesday, January 28th, 2014'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/applications/containers/what-is-docker.md
 title: Docker
 ---
 

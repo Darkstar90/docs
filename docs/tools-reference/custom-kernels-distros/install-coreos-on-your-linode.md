@@ -23,7 +23,15 @@ contributor:
 CoreOS Container Linux is now available for deployment from the Linode Manager.
 {{< /note >}}
 
+<<<<<<< HEAD
 [CoreOS](https://coreos.com/) is a container-centric Linux distribution designed for clustered systems running in the cloud. With user applications running inside containers, the host system itself provides minimal functionality. This guide details installing CoreOS on a **KVM** Linode. If you're running a Xen Linode, you can [upgrade](/docs/platform/kvm-reference/#how-to-enable-kvm), but it is currently not possible to install CoreOS on a Xen Linode.
+=======
+{: .note}
+> 
+>CoreOS Container Linux is now available for deployment from the Linode Manager.
+
+[CoreOS](https://coreos.com/) is a container-centric Linux distribution designed for clustered systems running in the cloud. With user applications running inside containers, the host system itself provides minimal functionality. This guide details installing CoreOS on a **KVM** Linode. If you're running a Xen Linode, you can [upgrade](/docs/platform/kvm#how-to-enable-kvm), but it is currently not possible to install CoreOS on a Xen Linode.
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 CoreOS is not officially supported by Linode so there are limitations to using it in comparision to the Linux images provided in the Linode Manager.
 

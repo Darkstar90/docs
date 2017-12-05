@@ -10,7 +10,11 @@ aliases: ['networking/openvpn/ubuntu-9-10-karmic/']
 modified: 2011-05-17
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2010-02-24
+=======
+published: 'Wednesday, February 24th, 2010'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'Secure Communications with OpenVPN on Ubuntu 9.10 (Karmic)'
 ---
 
@@ -221,6 +225,7 @@ Issue the following commands to configure `iptables` to properly forward traffic
 
 Before continuing, insert these `iptables` rules into your system's `/etc/rc.local` file to ensure that theses `iptables` rules will be recreated following your next reboot cycle:
 
+<<<<<<< HEAD
 {{< file-excerpt "/etc/rc.local" >}}
 #!/bin/sh -e
 #
@@ -250,6 +255,37 @@ deb-src http://security.ubuntu.com/ubuntu karmic-security universe
 
 {{< /file-excerpt >}}
 
+=======
+{: .file-excerpt }
+/etc/rc.local
+:   ~~~
+    #!/bin/sh -e
+    #
+    # [...]
+    #
+    iptables -A FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT
+    iptables -A FORWARD -s 10.8.0.0/24 -j ACCEPT
+    iptables -A FORWARD -j REJECT
+    iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -o eth0 -j MASQUERADE
+    
+    exit 0
+    ~~~
+
+This will enable all client traffic *except* DNS queries to be forwarded through the VPN. To forward DNS traffic through the VPN you will need to install the `dnsmasq` package and modify the `/etc/opnevpn/server.conf` package. Before we can install `dnsmasq` we must enable the "universe" repositories. Edit the `/etc/apt/sources.list` to uncomment or add the following lines:
+
+{: .file-excerpt }
+/etc/apt/sources.list
+:   ~~~
+    #
+    # universe repositories
+    deb http://us.archive.ubuntu.com/ubuntu/ karmic universe 
+    deb-src http://us.archive.ubuntu.com/ubuntu/ karmic universe
+    deb http://us.archive.ubuntu.com/ubuntu/ karmic-updates universe
+    deb-src http://us.archive.ubuntu.com/ubuntu/ karmic-updates universe
+    deb http://security.ubuntu.com/ubuntu karmic-security universe
+    deb-src http://security.ubuntu.com/ubuntu karmic-security universe
+    ~~~
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 Now reload the package database by issuing the following command:
 

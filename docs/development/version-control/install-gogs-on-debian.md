@@ -5,9 +5,15 @@ author:
 description: 'Install Gogs, a Self-hosted Git Service Written in Go, on Your Debian 8 (Jessie) Server.'
 keywords: ["gogs", "git", "golang", "nginx", " postgresql"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+<<<<<<< HEAD:docs/development/version-control/install-gogs-on-debian.md
 published: 2015-10-09
 aliases: ['applications/development/install-gogs-on-debian-jessie/','applications/development/install-gogs-on-debian-8-jessie/','development/version-control/install-gogs-on-debian-8-jessie']
 modified: 2017-11-09
+=======
+published: 'Friday, October 9th, 2015'
+alias: ['applications/development/install-gogs-on-debian-jessie/','applications/development/install-gogs-on-debian-8-jessie/']
+modified: Wednesday, June 21st, 2017
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/development/version-control/install-gogs-on-debian-8-jessie.md
 modified_by:
     name: Linode
 title: 'Install Gogs on Debian 9 with nginx and PostgreSQL'
@@ -25,7 +31,11 @@ external_resources:
 
 ![Install Gogs on Debian](/docs/assets/gogs_tg.png "Install Gogs on Debian")
 
+<<<<<<< HEAD:docs/development/version-control/install-gogs-on-debian.md
 This tutorial shows you how to install and configure Gogs, using PostgreSQL for the database server and nginx for the reverse proxy server. We will use `example.com` as the domain name for the site. Hosting your own software projects could benefit from large amounts of disk space, so consider using our [Block Storage](/docs/platform/how-to-use-block-storage-with-your-linode) service with this setup.
+=======
+This tutorial shows you how to install and configure Gogs, using PostgreSQL for the database server and Nginx for the reverse proxy server. We will use `example.com` as the domain name for the site. Hosting your own software projects could benefit from large amounts of disk space, so consider using our [Block Storage](/docs/platform/how-to-use-block-storage-with-your-linode) service with this setup.
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/development/version-control/install-gogs-on-debian-8-jessie.md
 
 {{< note >}}
 This guide is written for a non-root user. Commands that require elevated privileges are prefixed with `sudo`. If you're not familiar with the `sudo` command, you can check our [Users and Groups](/docs/tools-reference/linux-users-and-groups) guide.

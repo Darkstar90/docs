@@ -3,6 +3,7 @@ author:
   name: Linode
   email: docs@linode.com
 description: 'This guide will show you how to use the logrotate tool to manage logfiles.'
+<<<<<<< HEAD
 keywords: ["logrotate", "log files", "access logs"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 aliases: ['linux-tools/utilities/logrotate/']
@@ -10,15 +11,30 @@ modified: 2017-08-22
 modified_by:
   name: Linode
 published: 2010-10-11
+=======
+keywords: 'logrotate,log files,access logs'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+alias: ['linux-tools/utilities/logrotate/']
+modified: Tuesday, August 22nd, 2017
+modified_by:
+  name: Linode
+published: 'Monday, October 11th, 2010'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: How to Use logrotate to Manage Log Files
 ---
 
 ## What is logrotate?
 
 `Logrotate` is a tool for managing log files which have been created by system processes. This tool automatically compresses and removes logs to maximize the convenience of logs and conserve system resources. It gives users extensive control over how log rotation is processed.
+<<<<<<< HEAD
 
 ![logrotate](/docs/assets/logrotate.jpg)
 
+=======
+
+![logrotate](/docs/assets/logrotate.jpg)
+
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 ## Use Logrotate
 
 `logrotate`'s behavior is determined by options set in a configuration file, typically located at `/etc/logrotate.conf`.
@@ -43,6 +59,7 @@ logrotate /etc/logrotate.conf
 You may also use an entry in the root user's `crontab`.
 
 ### Understand logrotate.conf
+<<<<<<< HEAD
 
 The configuration file for log rotation begins with a number of global directives that control how log rotation is applied globally. Most configuration of log rotation does not occur in the `/etc/logrotate.conf` file, but rather in files located in the `/etc/logrotate.d` directory. Every daemon process or log file will have its own file for configuration in this directory. The `/etc/logrotate.d` configurations are loaded with the following directive in `logrotate.conf`
 
@@ -50,6 +67,10 @@ The configuration file for log rotation begins with a number of global directive
 include /etc/logrotate.d
 
 {{< /file-excerpt >}}
+=======
+
+The configuration file for log rotation begins with a number of global directives that control how log rotation is applied globally. Most configuration of log rotation does not occur in the `/etc/logrotate.conf` file, but rather in files located in the `/etc/logrotate.d` directory. Every daemon process or log file will have its own file for configuration in this directory. The `/etc/logrotate.d` configurations are loaded with the following directive in `logrotate.conf`
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 
 Configuration settings for rotation of specific logs is instantiated in a block structure:
@@ -83,7 +104,10 @@ mail <username@example.com>
 
 {{< /file-excerpt >}}
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 Your system will need a functioning [Mail Transfer Agent](/docs/email/) to be able to send email.
 
 ## Configure Rotation Intervals
@@ -95,7 +119,10 @@ weekly
 
 {{< /file-excerpt >}}
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 When `weekly` is set, logs are rotated if the current week day is lower than the week day of the last rotation (i.e., Monday is less than Friday) or if the last rotation occurred more than a week before the present.
 
 To configure monthly log rotation, use the following directive:
@@ -105,7 +132,10 @@ monthly
 
 {{< /file-excerpt >}}
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 Logs with this value will rotate every month that `logrotate` runs.
 
 For annual rotation:
@@ -163,24 +193,31 @@ In some situations it is not ideal to compress a log file immediately after rota
 {{< file-excerpt "logrotate.conf" >}}
 extension log
 
+<<<<<<< HEAD
 {{< /file-excerpt >}}
 
 
+=======
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 If you enable compression, the compressed log will be named `access.1.log.gz`.
 
 ## Control Log File Permissions
 
 If your daemon process requires that a log file exist to function properly, `logrotate` may interfere when it rotates logs. As a result, it is possible to have `logrotate` create new, empty log files after rotation. Consider the following example:
+<<<<<<< HEAD
 
 {{< file-excerpt "logrotate.conf" >}}
 create 640 www-data users
 
 {{< /file-excerpt >}}
+=======
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 
 In this example, a blank file is created with the permissions `640` (owner read/write, group read, other none) owned by the user `www-data` and in the `users` group. This directive specifies options in the form: `create [mode(octal)] [owner] [group]`.
 
 ## Run Commands
+<<<<<<< HEAD
 
 `Logrotate` can run commands before and after rotation to ensure that routine tasks associated with log ration, such as restarting or reloading daemons and passing other kinds of signals, are run. To run a command before rotation begins, use a directive similar to the following:
 
@@ -198,10 +235,23 @@ The command `touch /srv/www/example.com/application/tmp/stop` runs before rotati
 postrotate
     touch /srv/www/example.com/application/tmp/start
 endscript
+=======
+
+`Logrotate` can run commands before and after rotation to ensure that routine tasks associated with log ration, such as restarting or reloading daemons and passing other kinds of signals, are run. To run a command before rotation begins, use a directive similar to the following:
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 {{< /file-excerpt >}}
 
+<<<<<<< HEAD
+=======
+The command `touch /srv/www/example.com/application/tmp/stop` runs before rotating the logs. Ensure that there are no errant directives or commands on the lines that contain `prerotate` and `endscript`. Also, be aware that all lines *between* these directives will be executed. To run a command or set of commands after log rotation, consider the following example:
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 `postrotate` is identical to `prerotate` except that the commands are run after log rotation.
 
+<<<<<<< HEAD
+=======
+`postrotate` is identical to `prerotate` except that the commands are run after log rotation.
+
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 For a more comprehensive listing of possible directives, run `man logrotate`.

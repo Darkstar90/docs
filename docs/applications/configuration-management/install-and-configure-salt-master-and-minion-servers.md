@@ -3,6 +3,7 @@ author:
     name: Linode
     email: docs@linode.com
 description: 'Salt is a server management platform that can control a number of servers from a single location. Learn how to install Salt in this simple tutorial.'
+<<<<<<< HEAD:docs/applications/configuration-management/install-and-configure-salt-master-and-minion-servers.md
 keywords: ["Install salt", " salt configuration management", " salt master"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 aliases: ['applications/salt/install-salt/','applications/configuration-management/install-salt/']
@@ -10,6 +11,15 @@ modified: 2017-07-10
 modified_by:
     name: Linode
 published: 2015-09-22
+=======
+keywords: 'Install salt, salt configuration management, salt master'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+alias: ['applications/salt/install-salt/','applications/configuration-management/install-salt/']
+modified: Monday, July 10th, 2017
+modified_by:
+    name: Linode
+published: 'Tuesday, September 22nd, 2015'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/applications/configuration-management/install-and-configure-salt-master-and-minion-servers.md
 title: Install and Configure Salt Master and Minion Servers
 ---
 
@@ -136,7 +146,11 @@ The following steps will need to be run on *each* of your Salt minions.
 
     It should return the value `True` for each minion.
 
+<<<<<<< HEAD:docs/applications/configuration-management/install-and-configure-salt-master-and-minion-servers.md
 ## Installing Individual Packages with Salt
+=======
+##Installing Individual Packages with Salt
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/applications/configuration-management/install-and-configure-salt-master-and-minion-servers.md
 
 Once you have completed the previous configuration steps, you can install packages using Salt on all of your minions. Packages can be targeted to individual minions, or installed to all minions via simple commands. For these examples we will use Apache.
 

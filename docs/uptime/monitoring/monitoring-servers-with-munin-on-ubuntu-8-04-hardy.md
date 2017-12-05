@@ -10,9 +10,13 @@ aliases: ['server-monitoring/munin/ubuntu-8-04-hardy/']
 modified: 2011-05-17
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2010-02-22
 expiryDate: 2013-05-17
 deprecated: true
+=======
+published: 'Monday, February 22nd, 2010'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'Monitoring Servers with Munin on Ubuntu 8.04 (Hardy)'
 ---
 

@@ -10,7 +10,11 @@ aliases: ['email/mailman/debian-6-squeeze/']
 modified: 2011-05-23
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2011-04-05
+=======
+published: 'Tuesday, April 5th, 2011'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'Manage Email Lists with GNU Mailman on Debian 6 (Squeeze)'
 ---
 

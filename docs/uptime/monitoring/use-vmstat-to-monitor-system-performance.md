@@ -9,7 +9,11 @@ aliases: ['linux-tools/common-commands/vmstat/']
 modified: 2017-10-04
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2010-10-13
+=======
+published: 'Wednesday, October 13th, 2010'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: Use vmstat to Monitor System Performance
 external_resources:
  - '[Linux Ate My Ram](http://www.linuxatemyram.com/)'

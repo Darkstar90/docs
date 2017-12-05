@@ -5,8 +5,13 @@ author:
 description: How to retain Disks with the Linode Images service
 keywords: ["linode Images", " imagize"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+<<<<<<< HEAD
 aliases: ['linode-images/']
 modified: 2017-09-08
+=======
+alias: ['linode-images/']
+modified: Friday, September 8th, 2017
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 modified_by:
   name: Linode
 published: 2014-09-25
@@ -41,9 +46,14 @@ While an image can be captured while your Linode is running, we would recommend 
 
 	[![Host Job Queue](/docs/assets/host-job-queue.png)](/docs/assets/host-job-queue.png)
 
+<<<<<<< HEAD
  {{< note >}}
 Linode Images are limited to 2048MB of data per disk.  You will need to ensure that data within your disk does not exceed this size limit.
 {{< /note >}}
+=======
+ {: .note}
+>Linode Images are limited to 2048MB of data per disk.  You will need to ensure that data within your disk does not exceed this size limit.
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 Once the job in the host queue has completed, your Linode's disk has been captured and stored.
 

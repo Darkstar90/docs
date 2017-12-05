@@ -10,7 +10,11 @@ aliases: ['web-applications/e-commerce/opencart/debian-6/']
 modified: 2011-09-20
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2011-09-16
+=======
+published: 'Friday, September 16th, 2011'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'OpenCart on Debian 6 (Squeeze)'
 ---
 

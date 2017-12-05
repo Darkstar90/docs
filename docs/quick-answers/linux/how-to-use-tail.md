@@ -5,8 +5,13 @@ author:
 description: 'View and follow the end of files with the tail command.'
 keywords: ["linux", "how to", "tail", "last lines", "file"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+<<<<<<< HEAD
 aliases: ['quick-answers/how-to-use-tail/']
 modified: 2017-04-10
+=======
+alias: ['quick-answers/how-to-use-tail/']
+modified: 'Monday, April 10th, 2017'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 modified_by:
   name: Phil Zona
 published: 2017-04-10

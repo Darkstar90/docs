@@ -3,16 +3,27 @@ author:
   name: Joe D.
   email: docs@linode.com
 description: 'This tutorial is an introduction to developing with Git and GitHub with instructions on installing Git and creating your first GitHub test repository.'
+<<<<<<< HEAD:docs/development/version-control/how-to-install-git-and-clone-a-github-repository.md
 keywords: ["git", "dvcs", "vcs", "scm", "gitweb", "github"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 aliases: ['applications/development/developing-git-github/','development/version-control/developing-git-github/']
 modified: 2015-02-06
+=======
+keywords: 'git,dvcs,vcs,scm,gitweb,github'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+alias: ['applications/development/developing-git-github/','development/version-control/developing-git-github/']
+modified: Friday, February 6th, 2015
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/development/version-control/how-to-install-git-and-clone-a-github-repository.md
 external_resources:
  - '[Working with the Git Repository](/docs/development/version-control/how-to-configure-git/)'
  - '[GitHub Help Pages](https://help.github.com/)'
 modified_by:
   name: Linode
+<<<<<<< HEAD:docs/development/version-control/how-to-install-git-and-clone-a-github-repository.md
 published: 2015-02-06
+=======
+published: 'Friday, February 6th, 2015'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/development/version-control/how-to-install-git-and-clone-a-github-repository.md
 title: How to Install Git and Clone a GitHub Repository
 ---
 
@@ -38,7 +49,11 @@ The directions below are for Debian or Ubuntu. For installation on Mac, Windows,
 
     [![Workflow for using Git with GitHub.](/docs/assets/git-github-workflow-650w.png)](/docs/assets/git-github-workflow-1000w.png)
 
+<<<<<<< HEAD:docs/development/version-control/how-to-install-git-and-clone-a-github-repository.md
 ## Clone a GitHub Test Repository
+=======
+##Clone a GitHub Test Repository
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/development/version-control/how-to-install-git-and-clone-a-github-repository.md
 A repository, or repo, is a Git project. For tutorial purposes, there is a test repository setup on GitHub, which is listed below.
 
 1.  Go to the [GitHub homepage](https://www.github.com). At the top, search for `test-repo-789`. If you would like to contribute to Linode's guides, search for `linode docs`.
@@ -151,7 +166,11 @@ So far, Git was installed on a development Linode, a repo project was cloned to 
 
     [![GitHub branch filters.](/docs/assets/github-branch-filters.png)](/docs/assets/github-branch-filters.png)
 
+<<<<<<< HEAD:docs/development/version-control/how-to-install-git-and-clone-a-github-repository.md
 6.  Select the **"Create pull request"** button.
+=======
+6.  Select the **"Create pull request"** button. 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/development/version-control/how-to-install-git-and-clone-a-github-repository.md
 
     [![GitHub branch filters.](/docs/assets/github-create-pull-request.png)](/docs/assets/github-create-pull-request.png)
 

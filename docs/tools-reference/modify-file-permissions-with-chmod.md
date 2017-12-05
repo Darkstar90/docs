@@ -9,7 +9,11 @@ aliases: ['linux-tools/common-commands/chmod/']
 modified: 2011-07-07
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2010-07-01
+=======
+published: 'Thursday, July 1st, 2010'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: Modify File Permissions with chmod
 external_resources:
  - '[Manage File Permission with Users and Groups](/docs/tools-reference/linux-users-and-groups)'

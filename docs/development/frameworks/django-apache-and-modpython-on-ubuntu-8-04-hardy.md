@@ -10,7 +10,11 @@ aliases: ['frameworks/django-apache-mod-python/ubuntu-8-04-hardy/','websites/fra
 modified: 2011-05-17
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2009-09-10
+=======
+published: 'Thursday, September 10th, 2009'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'Django, Apache and mod_python on Ubuntu 8.04 (Hardy)'
 ---
 

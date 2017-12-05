@@ -5,11 +5,19 @@ author:
 description: 'Use DNS Manager to Direct Domains to Your Linode.'
 keywords: ["dns manager", "linode dns", "linode manager dns", "dns configuration", "ttl", "domain zones", "domain name"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+<<<<<<< HEAD
 aliases: ['dns-manager/','dns-guides/configuring-dns-with-the-linode-manager/', 'networking/dns/dns-manager/']
 modified: 2017-05-24
 modified_by:
   name: Angel Guarisma
 published: 2009-07-16
+=======
+alias: ['dns-manager/','dns-guides/configuring-dns-with-the-linode-manager/', 'networking/dns/dns-manager/']
+modified: Monday, May 24th, 2017
+modified_by:
+  name: Angel Guarisma
+published: 'Thursday, July 16th, 2009'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: DNS Manager Overview
 ---
 
@@ -90,6 +98,7 @@ This video runs through the process of adding a new domain zone:
 
 6.  If you want to add a *slave zone* instead of a master zone, click the **I wanted a slave zone** link to the lower right.
 
+<<<<<<< HEAD
     {{< note >}}
 In order for Linode's DNS servers to function as slaves, your DNS master server must notify and allow AXFR requests from the following IP addresses:
 
@@ -106,6 +115,23 @@ In order for Linode's DNS servers to function as slaves, your DNS master server 
 {{< /note >}}
 
 If you selected the option to have the DNS Manager insert basic DNS records, those records will be visible, as shown above. If you elected to keep the zone empty, you can start adding DNS records now. Skip to the [Adding DNS Records](/docs/networking/dns/dns-manager-overview#add-records) section for instructions.
+=======
+    {: .note}
+    > In order for Linode's DNS servers to function as slaves, your DNS master server must notify and allow AXFR requests from the following IP addresses:
+    >
+    >     104.237.137.10
+    >     65.19.178.10
+    >     75.127.96.10
+    >     207.192.70.10
+    >     109.74.194.10
+    >     2600:3c00::a
+    >     2600:3c01::a
+    >     2600:3c02::a
+    >     2600:3c03::a
+    >     2a01:7e00::a
+
+If you selected the option to have the DNS Manager insert basic DNS records, those records will be visible, as shown above. If you elected to keep the zone empty, you can start adding DNS records now. Skip to the [Adding DNS Records](#adding-1) section for instructions.
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 [![This page lets you add specific DNS records.](/docs/assets/1121-dns9.png)](/docs/assets/1121-dns9.png)
 

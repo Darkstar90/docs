@@ -5,11 +5,19 @@ author:
 description: 'Generate a CSR and install a commercial SSL certificate through the cPanel interface.'
 keywords: ["cpanel", " ssl", " ip"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+<<<<<<< HEAD
 aliases: ['web-applications/control-panels/cpanel/ssl-on-cpanel/']
 modified: 2017-04-28
 modified_by:
   name: Jonathan Chun
 published: 2011-09-27
+=======
+alias: ['web-applications/control-panels/cpanel/ssl-on-cpanel/']
+modified: Friday, April 28th, 2017
+modified_by:
+  name: Jonathan Chun
+published: 'Tuesday, September 27th, 2011'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: Install a Commercial SSL Certificate Using cPanel
 external_resources:
  - '[cPanel Home Page](https://cpanel.com)'

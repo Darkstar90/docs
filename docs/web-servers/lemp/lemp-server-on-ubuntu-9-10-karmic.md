@@ -10,7 +10,11 @@ aliases: ['lemp-guides/ubuntu-9-10-karmic/','websites/lemp/lemp-server-on-ubuntu
 modified: 2011-05-03
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2010-12-01
+=======
+published: 'Wednesday, December 1st, 2010'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'LEMP Server on Ubuntu 9.10 (Karmic)'
 ---
 

@@ -9,7 +9,11 @@ aliases: ['linux-tools/version-control/mercurial/','applications/development/man
 modified: 2011-05-23
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2010-04-26
+=======
+published: 'Monday, April 26th, 2010'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: Manage Distributed Version Control with Mercurial
 external_resources:
  - '[Mercurial Project Home Page](http://mercurial.selenic.com/)'

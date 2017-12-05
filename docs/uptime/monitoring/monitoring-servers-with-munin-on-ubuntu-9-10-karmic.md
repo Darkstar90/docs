@@ -10,9 +10,13 @@ aliases: ['server-monitoring/munin/ubuntu-9-10-karmic/']
 modified: 2011-05-17
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2010-01-22
 expiryDate: 2013-05-17
 deprecated: true
+=======
+published: 'Friday, January 22nd, 2010'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'Monitoring Servers with Munin on Ubuntu 9.10 (Karmic)'
 ---
 

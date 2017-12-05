@@ -26,9 +26,15 @@ This guide is intended to be very beginner-friendly. It takes a Linux 101 approa
 
 ![Title graphic](/docs/assets/introduction_to_linux_concepts_smg.png)
 
+<<<<<<< HEAD
  {{< note >}}
 Everything on a Linux system is case-sensitive. That means that `photo.jpg`, `photo.JPG`, and `Photo.jpg` are all different files. Usernames and passwords are also case-sensitive.
 {{< /note >}}
+=======
+ {: .note }
+>
+> Everything on a Linux system is case-sensitive. That means that `photo.jpg`, `photo.JPG`, and `Photo.jpg` are all different files. Usernames and passwords are also case-sensitive.
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 ## History
 

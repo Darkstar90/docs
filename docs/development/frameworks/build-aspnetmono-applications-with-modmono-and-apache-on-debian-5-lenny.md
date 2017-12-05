@@ -156,6 +156,7 @@ Finally you must create a test user named "testuser" and give that user access t
 
 Now that you have created a sample database, you can test your installation with the following test page. This will not only test your Mono installation but it will also will test your MySQL connector configuration. First create a file called `testdb.aspx` in your `DocumentRoot` and paste the text below into it. Be sure to change the `User ID` and `Password` to match what you specified above.
 
+<<<<<<< HEAD
 {{< file-excerpt "/srv/www/example.com/public_html/testdb.aspx" aspx-cs >}}
 <%@ Page Language="C#" %>
 <%@ Import Namespace="System.Data" %>
@@ -213,6 +214,65 @@ Next you will need to create a `web.config` file. You can copy and paste the exa
 
 {{< /file-excerpt >}}
 
+=======
+{: .file-excerpt }
+/srv/www/example.com/public_html/testdb.aspx
+:   ~~~ aspx
+    <%@ Page Language="C#" %>
+    <%@ Import Namespace="System.Data" %>
+    <%@ Import Namespace="MySql.Data.MySqlClient" %>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>ASP and MySQL Test Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <script runat="server">
+    private void Page_Load(Object sender, EventArgs e)
+    {
+    string connectionString = "Server=127.0.0.1;Database=sample;User ID=testuser;Password=somepassword;Pooling=false;";
+    MySqlConnection dbcon = new MySqlConnection(connectionString);
+    dbcon.Open();
+
+    MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT * FROM test", dbcon);
+    DataSet ds = new DataSet();
+    adapter.Fill(ds, "result");
+
+    dbcon.Close();
+    dbcon = null;
+
+    SampleControl.DataSource = ds.Tables["result"];
+    SampleControl.DataBind();
+    }
+    </script>
+
+    </head>
+
+    <body>
+    <h1>Testing Sample Database</h1>
+    <asp:DataGrid runat="server" id="SampleControl" />
+    </body>
+
+    </html>
+    ~~~
+
+Next you will need to create a `web.config` file. You can copy and paste the example below. Please note that `Custom Errors` have been turned off in this web.config for debugging purposes. The `customErrors mode` line should be removed in a production environment.
+
+{: .file-excerpt }
+/srv/www/example.com/public_html/web.config
+:   ~~~
+    <configuration>
+      <system.web>
+        <customErrors mode="Off"/>
+        <compilation>
+          <assemblies>
+            <add assembly="MySql.Data"/>
+          </assemblies>
+        </compilation>
+      </system.web>
+    </configuration>
+    ~~~
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 Visit the `testdb.aspx` file in a web browser. If you see the text "Testing Sample Databases" in your browser with the information that you inserted into the database above, you now have a functioning `mod_mono` installation and can continue with the development and deployment of your own application!
 

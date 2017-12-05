@@ -39,9 +39,12 @@ deb-src http://us.archive.ubuntu.com/ubuntu/ karmic-updates universe
 deb http://security.ubuntu.com/ubuntu karmic-security universe
 deb-src http://security.ubuntu.com/ubuntu karmic-security universe
 
+<<<<<<< HEAD
 {{< /file >}}
 
 
+=======
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 If you added `universe` to the items in your list, you'll need to update your repository database:
 
     apt-get update

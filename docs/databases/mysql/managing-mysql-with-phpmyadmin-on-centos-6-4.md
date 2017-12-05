@@ -5,8 +5,13 @@ author:
 description: 'Use phpMyAdmin to manage MySQL databases and users though a web interface.'
 keywords: ["mysql", "phpmyadmin", "sql", "centos"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+<<<<<<< HEAD
 aliases: ['databases/mysql/phpmyadmin-centos-6/']
 modified: 2017-08-01
+=======
+alias: ['databases/mysql/phpmyadmin-centos-6/']
+modified: 'Tuesday, August 1st, 2017'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 modified_by:
     name: Linode
 published: 2014-02-04

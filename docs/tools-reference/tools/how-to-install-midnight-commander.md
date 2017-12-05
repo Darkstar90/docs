@@ -3,10 +3,17 @@ author:
   name: Linode Community
   email: docs@linode.com
 description: 'This guide shows how to install and use Midnight Commander, a text user-interface file manager.'
+<<<<<<< HEAD
 keywords: ["midnight commander", " file manager", " text user-interface", " TUI"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 published: 2017-09-11
 modified: 2017-09-12
+=======
+keywords: 'midnight commander, file manager, text user-interface, TUI'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+published: 'Monday, September 11, 2017'
+modified: Tuesday, September 12, 2017
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 modified_by:
   name: Linode
 title: 'How to Use Midnight Commander, a Visual File Manager'
@@ -16,6 +23,12 @@ external_resources:
 - '[Midnight Commander](https://midnight-commander.org/)'
 ---
 
+<<<<<<< HEAD
+=======
+*This is a Linode Community guide. If you're an expert on something we need a guide on, you too can [get paid to write for us](/docs/contribute).*
+
+----
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 ![Midnight Commander](/docs/assets/midnight_commander.jpg)
 
@@ -28,9 +41,15 @@ A TUI facilitates interaction between users and their systems in a visually orie
 
 ## Before You Begin
 
+<<<<<<< HEAD
 {{< note >}}
 This guide is written for a non-root user. Commands that require elevated privileges are prefixed with `sudo`. If you’re not familiar with the `sudo` command, see the [Users and Groups](/docs/tools-reference/linux-users-and-groups) guide.
 {{< /note >}}
+=======
+{: .note}
+>
+> This guide is written for a non-root user. Commands that require elevated privileges are prefixed with `sudo`. If you’re not familiar with the `sudo` command, see the [Users and Groups](/docs/tools-reference/linux-users-and-groups) guide.
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 The methods in this tutorial have been tested on Debian 9. There is no special requirement to install Midnight Commander, and it works on all Linux distributions. While this file manager should work in almost identically on all Linux distributions, a particular distro may not package the exact same Midnight Commander version (4.8.18, in this case). This may result in small behavioral differences on other operating systems.
 
@@ -79,8 +98,13 @@ First, install the utility:
 
     ![Midnight Commander Delete Confirmation Dialog](/docs/assets/midnight-commander-delete-confirmation.png)
 
+<<<<<<< HEAD
 3.  At the top of the screen, you can see a colored bar with text:
 **Left**, **File**, **Command**, **Options**, **Right**.
+=======
+3.  At the top of the screen, you can see a colored bar with text: 
+**Left**, **File**, **Command**, **Options**, **Right**. 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
     These are drop-down menus that can be accessed by pressing **F9** and then navigating with your arrow keys. Press **F9** and then the **DOWN** arrow key multiple times until **Tree** is highlighted. Press **ENTER**. The panel has now changed to tree view.
 
@@ -124,6 +148,7 @@ First, install the utility:
 
 7.  Pressing **F4** will open a file in the default editor. On Debian you will get this output if you never used an editor before:
 
+<<<<<<< HEAD
     {{< output >}}
 Select an editor.  To change later, run 'select-editor'.
 1. /bin/nano        <---- easiest
@@ -133,14 +158,32 @@ Select an editor.  To change later, run 'select-editor'.
 
 Choose 1-4 [1]:
 {{< /output >}}
+=======
+    {:.output}
+    ~~~
+    Select an editor.  To change later, run 'select-editor'.
+    1. /bin/nano        <---- easiest
+    2. /usr/bin/mcedit
+    3. /usr/bin/vim.basic
+    4. /usr/bin/vim.tiny
+ 
+    Choose 1-4 [1]:
+    ~~~
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
     It's recommended you choose **2** here since `mcedit` integrates with Midnight Commander and is easier to use than `nano`. A large amount of functions can be accessed by pressing **F9** to activate the editor's menu. Press **F10** to exit the utility or **ESC** two times.
 
     ![Midnight Commander's Editor mcedit with Syntax Highlighting Active](/docs/assets/midnight-commander-mcedit.png)
 
+<<<<<<< HEAD
     {{< note >}}
 Actions can be cancelled in MC by pressing the **ESC** key twice.
 {{< /note >}}
+=======
+    {:.note}
+    >
+    >Actions can be cancelled in MC by pressing the **ESC** key twice.
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 ## Useful Tips and Tricks
 
@@ -162,6 +205,7 @@ Actions can be cancelled in MC by pressing the **ESC** key twice.
 
     Press **F9**, followed by **l** (L), then select the **SFTP link** menu entry. In the dialog box titled **SFTP to machine** enter `sftp://example@203.0.113.0`. Replace `example` with the username you have created on the remote machine and `203.0.113.1` with the IP address of your server. This will work only if the server at the other end accepts password logins. If you're logging in with SSH keys, then you'll first need to create and/or edit `~/.ssh/config`. It could look something like this:
 
+<<<<<<< HEAD
     {{< file "~/.ssh/config" aconf >}}
 Host sftp_server
     HostName 203.0.113.1
@@ -171,6 +215,17 @@ Host sftp_server
 
 {{< /file >}}
 
+=======
+    {: .file }
+    ~/.ssh/config
+    :   ~~~ conf
+        Host sftp_server
+            HostName 203.0.113.1
+            Port 22
+            User your_user
+            IdentityFile ~/.ssh/id_rsa
+        ~~~
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
     You can choose whatever you want as the **Host** value, it's only an identifier. **IdentityFile** is the path to your private SSH key.
 

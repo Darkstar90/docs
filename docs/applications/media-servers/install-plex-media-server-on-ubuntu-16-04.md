@@ -5,7 +5,11 @@ author:
 description: View and organize your media library with Plex on Ubuntu 16.04
 keywords: ["plex media server", " install plex", " plex ubuntu"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+<<<<<<< HEAD
 modified: 2017-06-21
+=======
+modified: Wednesday, June 21st, 2017
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 modified_by:
   name: Nick Brewer
 published: 2017-05-03

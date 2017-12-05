@@ -5,6 +5,7 @@ author:
 description: 'Install GitLab on an Ubuntu 14.04 (Trusty Tahr).'
 keywords: ["version control", "git", "gitlab", "ruby", " ruby on rails", "mysql", "postgresql", "nginx"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+<<<<<<< HEAD
 aliases: ['gitlab-with-ubuntu/','applications/development/gitlab-on-ubuntu-14-04/','applications/development/install-gitlab-on-ubuntu-14-04-trusty-tahr/', 'applications/development/how-to-install-and-configure-gitlab-on-ubuntu-14-04-trusty-tahr/']
 contributor:
     name: Nashruddin Amin
@@ -13,6 +14,16 @@ modified: 2017-06-21
 modified_by:
   name: Linode
 published: 2014-09-04
+=======
+alias: ['gitlab-with-ubuntu/','applications/development/gitlab-on-ubuntu-14-04/','applications/development/install-gitlab-on-ubuntu-14-04-trusty-tahr/', 'applications/development/how-to-install-and-configure-gitlab-on-ubuntu-14-04-trusty-tahr/']
+contributor:
+    name: Nashruddin Amin
+    link: https://twitter.com/bsd_noobz
+modified: Wednesday, June 21st, 2017
+modified_by:
+  name: Linode
+published: 'Thursday, September 4th, 2014'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'Install GitLab on Ubuntu 14.04 (Trusty Tahr)'
 external_resources:
  - '[GitLab Community Edition](https://www.gitlab.com/gitlab-ce/)'
@@ -22,8 +33,11 @@ external_resources:
 ---
 
 
+<<<<<<< HEAD
 ![Install Gitlab on Ubuntu](/docs/assets/install-gitlab-on-ubuntu/Install_GitLab_smg.jpg)
 
+=======
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 GitLab is a free git repository management application based on Ruby on Rails. It is an interesting alternative if you want to host your own git repositories, since third-party hosting is not always the best option when writing private or closed-source software.
 
 GitLab provides a [.deb package](https://www.gitlab.com/downloads/) which contains GitLab Community Edition and all its dependencies (Ruby, PostgreSQL, Redis, Nginx, Unicorn and other gems) already compiled. Installing this package is [straightforward](https://gitlab.com/gitlab-org/omnibus-gitlab/blob/master/README.md#installation). But since it will install its own package dependencies (Nginx, PostgreSQL, etc), this installation method is suitable if the server is dedicated only to managing git repositories. If you want GitLab to use your existing resources (i.e: you already have Nginx and PostgreSQL installed), you need to install GitLab manually.

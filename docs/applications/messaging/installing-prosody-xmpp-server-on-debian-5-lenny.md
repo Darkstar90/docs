@@ -10,7 +10,11 @@ aliases: ['communications/xmpp/prosody/debian-5-lenny/']
 modified: 2011-08-22
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2009-10-13
+=======
+published: 'Tuesday, October 13th, 2009'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'Installing Prosody XMPP Server on Debian 5 (Lenny)'
 ---
 

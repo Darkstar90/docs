@@ -3,10 +3,17 @@ author:
   name: Linode Community
   email: docs@linode.com
 description: 'Index and search your site''s content with Apache Solr, a custom, fast, enterprise-grade, open source search solution.'
+<<<<<<< HEAD
 keywords: ["solr", "enterprise search", "lucene", "web search"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 published: 2017-09-13
 modified: 2017-09-13
+=======
+keywords: 'solr,enterprise search,lucene,web search'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+published: 'Wednesday, September 13, 2017'
+modified: Wednesday, September 13, 2017
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 modified_by:
   name: Linode
 title: 'Add a Custom Search to your Site with Solr'
@@ -17,6 +24,12 @@ external_resources:
   - '[Apache Solr Reference Guide](https://lucene.apache.org/solr/guide/6_6/)'
 ---
 
+<<<<<<< HEAD
+=======
+*This is a Linode Community guide. If you're an expert on something for which we need a guide, you too can [get paid to write for us](/docs/contribute).*
+
+---
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 Apache Solr is an open source search platform that provides administrators with a customizable and scalable solution for managing online content. Solr can be configured to index all uploaded data, resulting in fast search results, whether used enterprise-wide or with a single website. In addition to a built-in web control interface, developers can also link access via a client API.
 
@@ -30,9 +43,14 @@ Apache Solr is an open source search platform that provides administrators with 
 
 3.  Update your system and package repositories and install `wget`.
 
+<<<<<<< HEAD
 {{< note >}}
 The steps in this guide require root privileges. Be sure to run the steps below as `root` or with the `sudo` prefix. For more information on privileges, see our [Users and Groups](/docs/tools-reference/linux-users-and-groups) guide.
 {{< /note >}}
+=======
+{: .note}
+> The steps in this guide require root privileges. Be sure to run the steps below as `root` or with the `sudo` prefix. For more information on privileges, see our [Users and Groups](/docs/tools-reference/linux-users-and-groups) guide.
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 ## Install Java
 
@@ -40,13 +58,21 @@ The steps in this guide require root privileges. Be sure to run the steps below 
 
     **Debian & Ubuntu**
 
+<<<<<<< HEAD
     1. Add the Java 8 repository, download the GPG key, and install Java 8.
+=======
+    1. Add the Java 8 repository, download the GPG key, and install Java 8. 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
             echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee /etc/apt/sources.list.d/webupd8team-java.list
             echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee -a /etc/apt/sources.list.d/webupd8team-java.list
             apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886
             apt update
+<<<<<<< HEAD
             apt install oracle-java8-installer
+=======
+            apt install oracle-java8-installer 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
     2. On most systems, the `oracle-java8-set-default` package will also be downloaded and installed. To verify, run the following command and check for matching output. If your output does not match, continue to Step 3. Otherwise, Java 8 installation is complete:
 
@@ -127,9 +153,14 @@ Solr listens on port `8983` by default. Open the port to allow access to the web
 
     iptables -A INPUT -p tcp --dport 8983 -j ACCEPT -m comment --comment "Solr port"
 
+<<<<<<< HEAD
 {{< note >}}
 Save your iptables rule using *iptables-persistent*, otherwise it will be lost on the next reboot.
 {{< /note >}}
+=======
+{: .note}
+> Save your iptables rule using *iptables-persistent*, otherwise it will be lost on the next reboot.
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 ## Access the Solr Administration Page
 
@@ -145,6 +176,7 @@ Set up a password protected login page for the Solr admin page:
 
 1. Navigate to `/opt/solr/server/etc` and edit the `webdefault.xml` file. Add the following to the end of the file, before `</web-app>`:
 
+<<<<<<< HEAD
     {{< file-excerpt "/opt/solr/server/etc/webdefault.xml" aconf >}}
 <login-config>
       <auth-method>BASIC</auth-method>
@@ -187,6 +219,50 @@ admin: admin123,user
 
 {{< /file >}}
 
+=======
+    {:.file-excerpt }
+    /opt/solr/server/etc/webdefault.xml
+    :  ~~~ conf
+       <login-config>
+             <auth-method>BASIC</auth-method>
+             <realm-name>Solr Admin Auth</realm-name>
+       </login-config>
+      
+       <security-constraint>
+             <web-resource-collection>
+                   <web-resource-name>Solr Admin Auth</web-resource-name>
+                   <url-pattern>/*</url-pattern>
+               </web-resource-collection>
+               <auth-constraint>
+                   <role-name>user</role-name>
+               </auth-constraint>
+         </security-constraint>
+       ~~~
+
+2. In the same directory, edit the `jetty.xml` file and add the following before `</Configure>` at the end:
+
+    {: .file-excerpt }
+    /opt/solr/server/etc/jetty.xml
+    :  ~~~ conf
+       <Call name="addBean">
+           <Arg>
+               <New class="org.eclipse.jetty.security.HashLoginService">
+                   <Set name="name">Solr Admin Auth</Set>
+                   <Set name="config"><SystemProperty name="jetty.home" default="."/>/etc/realm.properties</Set>
+                   <Set name="refreshInterval">0</Set>
+               </New>
+           </Arg>
+        </Call>
+       ~~~
+
+3. Create a `realm.properties` file in the current directory to add the user login information. Replace the username `admin` and `admin123` password with the user and secure password of your choice:
+
+    {: .file }
+    /opt/solr/server/etc/realm.properties
+    : ~~~ conf
+      admin: admin123,user
+      ~~~
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
       Here, `admin:` assigns a username "admin" with the password `admin123`. `user` attributes this new user to the "user" role-name set in `webdefault.xml`.
 
@@ -195,6 +271,7 @@ admin: admin123,user
         systemctl restart solr
 
 5. You can also use this process to secure other web pages within Solr. For example, if you have two Solr search cores created, `core1` and `core2`, you can limit access to both by adding additional `<url-pattern>` lines to `webdefault.xml`:
+<<<<<<< HEAD
 
         <url-pattern>/core1/*</url-pattern>
         <url-pattern>/core2/*</url-pattern>
@@ -202,3 +279,12 @@ admin: admin123,user
 ## Where to Go From Here
 
 With Solr installed on your Linode, you are now ready to create search indexes and add data, or integrate it with your web application or website. If you need help with this, the [Apache Solr Reference Guide](https://lucene.apache.org/solr/guide/6_6/) page on the Apache Solr website is a great place to start.
+=======
+    
+        <url-pattern>/core1/*</url-pattern> 
+        <url-pattern>/core2/*</url-pattern> 
+
+## Where to Go From Here
+
+With Solr installed on your Linode, you are now ready to create search indexes and add data, or integrate it with your web application or website. If you need help with this, the [Apache Solr Reference Guide](https://lucene.apache.org/solr/guide/6_6/) page on the Apache Solr website is a great place to start. 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5

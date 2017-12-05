@@ -5,8 +5,13 @@ author:
 description: 'The Linode Guides & Tutorials style guide for article submissions'
 keywords: ["style guide", "format", "formatting", "how to write", "write for us", "write for linode", "linode docs", "submissions"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+<<<<<<< HEAD
 aliases: ['style-guide/','linode-writers-guide/']
 modified: 2017 2017-06-30
+=======
+alias: ['style-guide/','linode-writers-guide/']
+modified: Friday, June 30, 2017
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 modified_by:
   name: Edward Angert
 published: 2014-01-15
@@ -32,6 +37,7 @@ Linode Guides & Tutorials are written in [PHP Markdown Extra](https://michelf.ca
 
 Linode Guides & Tutorials store metadata and other information in a [YAML](http://yaml.org/) header at the top of every page. Use the template below for your own guide.
 
+<<<<<<< HEAD
 {{< file-excerpt "Author Submission" >}}
 ---
 author:
@@ -56,6 +62,34 @@ contributor:
 
 {{< /file-excerpt >}}
 
+=======
+{: .file-excerpt}
+Author Submission
+:   ~~~
+    ---
+    author:
+      name: Linode Community
+      email: docs@linode.com
+    description: 'Two to three sentences describing your guide.'
+    keywords: 'list,of,keywords,and key phrases'
+    license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+    published: 'Weekday, Month 00st, 2015'
+    modified: Weekday, Month 00th, 2015
+    modified_by:
+      name: Linode
+    title: 'Guide Title'
+    contributor:
+      name: Your Name
+      link: Github/Twitter Link
+      external_resources:
+    - '[Link Title 1](http://www.example.com)'
+    - '[Link Title 2](http://www.example.net)'
+    ---
+
+    *This is a Linode Community guide. If you're an expert on something for which we need a guide, you too can [get paid to write for us](/docs/contribute).*
+    ----
+    ~~~
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 If you're updating an existing guide in our repository, you may also notice a `deprecated` field in the header. This defaults to false, and setting it to *true* inserts a pre-written message near the beginning stating that the guide is no longer maintained. Typically, this will be used on guides specific to applications or distributions that have reached End of Life (EOL).
 
@@ -314,6 +348,11 @@ Variables that the reader will need to change for their system or preference sho
 | Formatting | Example |
 |:--------------|:------------|
 | Change the \`password\` and \`username\` values. | Change the `password` and `username` values. |
+<<<<<<< HEAD
+=======
+|:--------------|:------------|
+
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 ## Legal Information
 
 COPYRIGHT OWNERSHIP. Writer agrees that the Work is being created by the writer for the Linode Guides & Tutorials repository and that each form of Work is being created by the writer as a “work made for hire” under the United States Copyright Act and, at all stages of development, the Work shall be and remain the sole and exclusive property of Linode. At Linode's sole, absolute and unfettered discretion, Linode may make any alterations to the Work.
@@ -321,4 +360,7 @@ COPYRIGHT OWNERSHIP. Writer agrees that the Work is being created by the writer 
 CREDIT. Nothing contained in this Agreement shall be deeded to require Linode to use the Work, or any part thereof, in connection with Linode Guides & Tutorials or otherwise. Credit for the Work shall read, "Contributed by *writer's name*."
 
 PAYMENT. Upon publication of a submission to the Linode Guides & Tutorials Repository, the writer will be paid a sum of up to USD $300.00 either in the form of a credit to their Linode account, a hardcopy check, or as an electronic payment.
+<<<<<<< HEAD
 {{< /caution >}}
+=======
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5

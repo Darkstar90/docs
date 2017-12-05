@@ -5,7 +5,11 @@ author:
 description: 'This guide will show you how to install, configure, and fine-tune OpenVPN clients on Android, iOS, Linux, OS X and Windows.'
 keywords: ["openvpn", "vpn", "vpn tunnel", "ios", "os x", "mac", "windows", "android"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+<<<<<<< HEAD
 modified: 2017-09-26
+=======
+modified: 'Thursday, July 13th, 2017'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 modified_by:
   name: Linode
 published: 2015-12-09
@@ -23,7 +27,11 @@ This guide is the third of a three-part series on setting up a hardened OpenVPN 
 
 ## Before You Begin
 
+<<<<<<< HEAD
 You must already have the client files ready to transfer to the device. These are listed below. **Each client** will need its own copies. If you need client credentials, see the [VPN Certificate Authority](/docs/networking/vpn/set-up-a-hardened-openvpn-server/#vpn-certificate-authority) area of part one of in series.
+=======
+You must already have the client files on your OpenVPN server. These are:
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
   *  `client1.key`    # Exclusive to this device.
   *  `client1.cert`   # Exclusive to this device.
@@ -147,7 +155,11 @@ These steps assume your distribution uses NetworkManager. Depending on the Netwo
 
     ![NetworkManager OpenVPN](/docs/assets/networkmanager-openvpn-vpn.png)
 
+<<<<<<< HEAD
     ![NetworkManager OpenVPN](/docs/assets/networkmanager-openvpn-vpn-import-ovpn.png)
+=======
+5.  In the **Security** tab, set the **Cipher** to AES-256-CBC and **HMAC Authentication** to SHA512.  THen choose the **TLS Authentication** tab.
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 5.  The file browser will then open. Navigate to the computer's `client.ovpn` file and click *Open* to import it.
 

@@ -9,7 +9,11 @@ aliases: ['linux-tools/version-control/bazaar/','applications/development/manage
 modified: 2011-05-23
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2010-01-18
+=======
+published: 'Monday, January 18th, 2010'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: Manage Distributed Source Branches with Bazaar
 external_resources:
  - '[The Bazaar Project](http://bazaar.canonical.com/en/)'

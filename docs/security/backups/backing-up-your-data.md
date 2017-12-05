@@ -195,9 +195,15 @@ Here's how to make a manual backup of your Linode:
 
         rsync -ahvz user@production_server:/path/to/source/content /path/to/local/backup/storage/
 
+<<<<<<< HEAD
     {{< note >}}
 For a deeper explanation of the rsync command's options and arguments, and to learn how to customize the command, please see the [Understanding the Rsync Command](#understanding-the-rsync-command) section of this guide.
 {{< /note >}}
+=======
+    {:.note}
+    >
+    > For a deeper explanation of the rsync command's options and arguments, and to learn how to customize the command, please see the [Understanding the Rsync Command](#understanding-the-rsync-command) section of this guide.
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 3.  Type your SSH password for the *production\_server* when prompted. You will be able to see your files listed as they are copied. At the end, you should see a confirmation message like this:
 
@@ -253,9 +259,15 @@ Here's how to set up automatic backups of your Linode to a Linux server:
 
         rsync -ahvz --delete --link-dest=~/backups/public_orig user@production_server:~/public ~/backups/public_$(date -I)
 
+<<<<<<< HEAD
     {{< note >}}
 For an explanation of the rsync command's options and arguments, and to learn how to customize the command, please see the [Understanding the Rsync Command](#understanding-the-rsync-command) section of this guide.
 {{< /note >}}
+=======
+    {:.note}
+    >
+    > For an explanation of the rsync command's options and arguments, and to learn how to customize the command, please see the [Understanding the Rsync Command](#understanding-the-rsync-command) section of this guide.
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 8.  The output should be similar to the output that was generated in Step 6. Feel free to `ls` your `~/backups/` folder to make sure everything was created.
 9.  Add the command to cron so it gets executed automatically every day. Open the cron file on your *backup\_server* for editing by entering the following command:
@@ -377,9 +389,15 @@ You can `dir` the contents of `%HOMEPATH\backups\public_orig\` to verify that ev
 
             rsync -hrtvz --chmod u+rwx --delete --link-dest=/cygdrive/c/Users/user/backups/public_orig user@production_server:~/public /cygdrive/c/Users/user/backups/public_%DATE:~10,4%-%DATE:~4,2%-%DATE:7,2%
 
+<<<<<<< HEAD
         {{< note >}}
 For a deeper explanation of the rsync command's options and arguments, and to learn how to customize the command, please see the [Understanding the Rsync Command](#understanding-the-rsync-command) section of this guide.
 {{< /note >}}
+=======
+        {:.note}
+        >
+        > For a deeper explanation of the rsync command's options and arguments, and to learn how to customize the command, please see the [Understanding the Rsync Command](#understanding-the-rsync-command) section of this guide.
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
     6.  Save the file.
     7.  Run the file with the following line for your command prompt:

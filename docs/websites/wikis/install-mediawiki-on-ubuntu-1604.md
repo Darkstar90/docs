@@ -3,6 +3,7 @@ author:
   name: Stan Schwertly
   email: docs@linode.com
 description: 'A guide for getting started with the popular MediaWiki engine for powering wiki sites.'
+<<<<<<< HEAD
 keywords: ["mediawiki", "wiki", "web-applications"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 aliases: ['web-applications/wikis/mediawiki/','websites/wikis/mediawiki-engine/']
@@ -10,6 +11,15 @@ modified: 2017-08-16
 modified_by:
   name: Linode
 published: 2009-09-30
+=======
+keywords: 'mediawiki,wiki,web-applications'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+alias: ['web-applications/wikis/mediawiki/','websites/wikis/mediawiki-engine/']
+modified: Wednesday, August 16, 2017
+modified_by:
+  name: Linode
+published: 'Wednesday, September 30th, 2009'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: Install MediaWiki on Ubuntu 16.04
 external_resources:
  - '[MediaWiki Wiki](http://www.mediawiki.org/wiki/MediaWiki)'

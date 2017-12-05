@@ -5,7 +5,11 @@ author:
 description: 'Use Vagrant to manage development environments and content on Linode.'
 keywords: ["linode", "vagrant", "content management", "management", "automation", "development", "ruby", "vagrantfile", "api", "apache"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+<<<<<<< HEAD
 modified: 2015-06-25
+=======
+modified: Thursday, June 25th, 2015 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 modified_by:
     name: Elle Krout
 published: 2015-06-25

@@ -160,7 +160,11 @@ Network issues between your desktop computer and the data center can make your s
 -   If you have experienced degraded service for an extended period of time, you can contact a service provider about the issues you're experiencing. Be sure to send MTR reports and any other relevant data.
 -   Network congestion over long distances and during peak times is normal. We recommended positioning hosts and resources as geographically close to the targeted audience as possible.
 
+<<<<<<< HEAD
 When contacting [Linode support](/docs/support) for assistance, please include the output of two MTR reports; one from your local network to your Linode, and another from your Linode to your local network's IP address. You can use a website such as [whatsmyip.org](http://www.whatsmyip.org/) to determine the IP address of your local network. If you're not able to connect to your Linode over SSH, you can connect using the [Lish](/docs/networking/using-the-linode-shell-lish) console to generate a report.
+=======
+When contacting [Linode support](/docs/support) for assistance, please include the output of two MTR reports; one from your local network to your Linode, and another from your Linode to your local network's IP address. You can use a website such as [whatsmyip.org](http://www.whatsmyip.org/) to determine the IP address of your local network. If you're not able to connect to your Linode over SSH, you can connect using the [Lish](/docs/networking/using-the-linode-shell-lish) console to generate a report. 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 ### Is there a Disk I/O bottleneck?
 

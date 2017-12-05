@@ -5,11 +5,19 @@ author:
 description: Our guide to installing and using Linode Longview.
 keywords: ["system monitoring", "longview", "troubleshooting"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+<<<<<<< HEAD
 aliases: ['longview/', 'uptime/longview/']
 modified: 2017-05-26
 modified_by:
   name: Angel Guarisma
 published: 2013-03-27
+=======
+alias: ['longview/']
+modified: Friday, May 26, 2017
+modified_by:
+  name: Angel Guarisma
+published: 'Wednesday, March 27th, 2013'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: Longview
 ---
 
@@ -34,7 +42,11 @@ To access Longview, log in to the [Linode Manager](https://manager.linode.com) a
 
 2.  This guide will use `sudo` wherever possible.
 
+<<<<<<< HEAD
 3. This guide uses `iptables` for firewall configuration. If you followed our [Configure a Firewall with UFW](/docs/security/firewalls/configure-firewall-with-ufw) guide, you learned about ufw: a manager for iptables. In this guide we chose to interface directly with `iptables`, instead of using `ufw`. You can use both, interchangeably without issue.
+=======
+3. This guide uses `iptables` for firewall configuration. If you followed our [Configure a Firewall with UFW](/docs/security/firewalls/configure-firewall-with-ufw) guide, you learned about ufw: a manager for iptables. In this guide we chose to interface directly with `iptables`, instead of using `ufw`. You can use both, interchangeably without issue.   
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 ## Adding Systems
 

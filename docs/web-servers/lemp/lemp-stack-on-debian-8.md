@@ -3,6 +3,7 @@ author:
   name: Linode
   email: docs@linode.com
 description: 'This tutorial will teach you how to install a LEMP stack to serve websites and applications on Debian 8.'
+<<<<<<< HEAD:docs/web-servers/lemp/lemp-stack-on-debian-8.md
 keywords: ["nginx", "lemp", "lepp", "perl", "python", "php", "linux", "web applications"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 aliases: ['websites/lemp/lemp-server-on-debian-8/','web-servers/lemp/lemp-server-on-debian-8/']
@@ -11,6 +12,16 @@ modified_by:
   name: Linode
 published: 2014-02-07
 title: Install a LEMP (Linux, Nginx, MariaDB, PHP) Stack on Debian 8
+=======
+keywords: 'nginx,lemp,lepp,perl,python,php,linux,web applications'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+alias: ['websites/lemp/lemp-server-on-debian-8/','web-servers/lemp/lemp-server-on-debian-8/']
+modified: Monday, August 21st, 2017
+modified_by:
+  name: Linode
+published: 'Friday, February 7th, 2014'
+title: Install a LEMP (Linux, Nginx, MariaDB, PHP) Stack on Debian 8 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/web-servers/lemp/lemp-stack-on-debian-8.md
 external_resources:
     - '[Basic Nginx Configuration](/docs/websites/nginx/basic-nginx-configuration)'
     - '[Clustered Web Servers and Software Load Balancing with Nginx](/docs/uptime/loadbalancing/how-to-use-nginx-as-a-front-end-proxy-server-and-software-load-balancer)'

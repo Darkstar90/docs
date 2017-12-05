@@ -10,7 +10,11 @@ aliases: ['lamp-guides/fedora-11/','websites/lamp/lamp-server-on-fedora-11/']
 modified: 2011-05-02
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2009-09-29
+=======
+published: 'Tuesday, September 29th, 2009'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: LAMP Server on Fedora 11
 external_resources:
   - '[Fedora Home Page](http://www.fedoraproject.org/)'

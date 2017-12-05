@@ -2,11 +2,19 @@
 author:
   name: Angel Guarisma
   email: aguarisma@linode.com
+<<<<<<< HEAD
 description: 'This tutorial shows you how to install Taskwarrior on Ubuntu 16.10'
 keywords: ["Install Taskwarrior", "Taskwarrior on Ubuntu", "Taskwarrior server"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 aliases: ['docs/applications/project-manager/setting-up-taskwarrior-on-ubuntu-16-04/']
 modified: 2017-05-23
+=======
+description: 'This tutorial shows you how to install Taskwarrior on Ubuntu 16.10' 
+keywords: 'Install Taskwarrior,Taskwarrior on Ubuntu,Taskwarrior server' 
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+alias: ['docs/applications/project-manager/setting-up-taskwarrior-on-ubuntu-16-04/']
+modified: Tuesday, May 23, 2017
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 modified_by:
   name: Angel
 Published: Tuesday, July 1, 2017
@@ -33,6 +41,7 @@ external_resources:
 
         sudo apt update && sudo apt upgrade
 
+<<<<<<< HEAD
 ## Install Taskwarrior
 
 Install Taskwarriror with the command:
@@ -42,6 +51,17 @@ Install Taskwarriror with the command:
 After the packages are installed, run the command, `task`.
 
 The system will ask if you want to create a configuration file for your user.
+=======
+## Install Taskwarrior 
+
+Install Taskwarriror with the command:
+		
+	sudo apt install task
+	
+After the packages are installed, run the command, `task`.
+
+The system will ask if you want to create a configuration file for your user. 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 Answer `yes`.
 
@@ -53,10 +73,17 @@ You can manage your tasks and effectively use Taskwarrior with a handful of simp
 
 ### Add a Task
 
+<<<<<<< HEAD
 To add a task, run the command, [task add](https://taskwarrior.org/docs/commands/add.html).
 
 For example:
 
+=======
+To add a task, run the command, [task add](https://taskwarrior.org/docs/commands/add.html). 
+
+For example:
+	
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
     task add Add block storage volume to my Linode
 
 will return:
@@ -67,7 +94,11 @@ If you then run `task` again, you'll see the job information. Taskwarrior assign
 
     taskwarrior@localhost:~$ task
     [task next]
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
     ID Age Description                             Urg
      1 14s Add block storage volume to my Linode    0
 
@@ -100,12 +131,17 @@ To remove a task you can run the `task <task_number> delete` command.
 
 ### Assign Tasks a Due Date
 
+<<<<<<< HEAD
 Using the `due` argument, you can assign a due date for a task:
+=======
+Using the `due` argument, you can assign a due date for a task: 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 	task add write Taskwarrior guide for the Linode community due:tomorrow
 
 	taskwarrior@localhost:~$ task
 	[task next]
+<<<<<<< HEAD
 
 	ID Age   Due Description                                      Urg
  	 2 11s    7h write Taskwarrior guide for the Linode community 8.65
@@ -114,6 +150,16 @@ Using the `due` argument, you can assign a due date for a task:
 	2 tasks
 
 The `due` [argument](https://taskwarrior.org/docs/dates.html#due) allows a significant breadth for input. Read more about what's possible with the `due` argument at [the official documentation.](https://taskwarrior.org/docs/dates.html)
+=======
+	
+	ID Age   Due Description                                      Urg
+ 	 2 11s    7h write Taskwarrior guide for the Linode community 8.65
+ 	 1 16min     buy groceries                                       0
+	
+	2 tasks
+
+The `due` [argument](https://taskwarrior.org/docs/dates.html#due) allows a significant breadth for input. Read more about what's possible with the `due` argument at [the official documentation.](https://taskwarrior.org/docs/dates.html) 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 Taskwarrior supports [recurring tasks](https://taskwarrior.org/docs/recurrence.html) by using the `recur` argument. The example below creates a daily task, the first of which is due 23 hours from the time of creation:
 
@@ -121,22 +167,38 @@ Taskwarrior supports [recurring tasks](https://taskwarrior.org/docs/recurrence.h
 
     taskwarrior@localhost:~$ task
     [task next]
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
     ID Age   Recur Due Description                                      Urg
      2 11min        7h write Taskwarrior guide for the Linode community 8.65
      4         P1D 23h update ubuntu                                    8.34
      1 28min           buy groceries                                       0
+<<<<<<< HEAD
 
     3 tasks
     Creating recurring task instance 'update ubuntu'
 
 ### Visualization
+=======
+    
+    3 tasks
+    Creating recurring task instance 'update ubuntu'
+
+### Visualization 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 Taskwarrior does much more than just list the tasks you've added on the command line. The [burndown](https://taskwarrior.org/docs/commands/burndown.html) feature outputs graphical representations of your Taskwarrior workflow.
 
 ![taskwarburndown](/docs/assets/taskwarrior/tw-burndown.png)
 
+<<<<<<< HEAD
 The `calendar` feature shows a calendar that contains all your tasks and due dates.
+=======
+The `calendar` feature shows a calendar that contains all your tasks and due dates. 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 ![taskcalendar](/docs/assets/taskwarrior/tw-calendar.png)
 
 

@@ -10,7 +10,11 @@ aliases: ['server-monitoring/nagios/debian-5-lenny/']
 modified: 2011-06-30
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2010-04-21
+=======
+published: 'Wednesday, April 21st, 2010'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'Monitor Services with Nagios on Debian 5 (Lenny)'
 ---
 

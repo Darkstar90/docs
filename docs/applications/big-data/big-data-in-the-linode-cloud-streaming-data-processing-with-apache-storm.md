@@ -5,8 +5,13 @@ author:
 description: 'Deploy Storm cluster on Linode cloud for real-time analytics on streaming datasets.'
 keywords: ["storm", "analytics", "big data", "zookeeper"]
 license: '[CC BY-ND 4.0](http://creativecommons.org/licenses/by-nd/4.0/)'
+<<<<<<< HEAD
 published: 2016-10-25
 modified: 2017-06-21
+=======
+published: 'Tuesday, October 25th, 2016'
+modified: Wednesday June 21st, 2017
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 modified_by:
     name: Phil Zona
 title: 'Big Data in the Linode Cloud: Streaming Data Processing with Apache Storm'

@@ -9,7 +9,11 @@ license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 aliases: ['tools-reference/custom-kernels-distros/running-a-custom-linux-distro-on-a-linode-vps/','tools-reference/custom-kernels-distros/custom-distro-on-kvm-linode/']
 modified_by:
   name: Linode
+<<<<<<< HEAD
 modified: 2017-06-26
+=======
+modified: 'Monday, June 26th, 2017'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: Install a Custom Distribution on a Linode
 ---
 
@@ -84,11 +88,18 @@ As an additional security step, you can use the keys provided in the same direct
         wget http://ftp.debian.org/debian/dists/stable/main/installer-amd64/current/images/netboot/mini.iso
         dd if=mini.iso of=/dev/sda
 
+<<<<<<< HEAD
     {{< note >}}
 If you would prefer to write the installer directly to the disk as it downloads, use:
 
 curl http://ftp.debian.org/debian/dists/stable/main/installer-amd64/current/images/netboot/mini.iso | dd of=/dev/sda
 {{< /note >}}
+=======
+    {: .note}
+    > If you would prefer to write the installer directly to the disk as it downloads, use:
+    >
+    >     curl http://ftp.debian.org/debian/dists/stable/main/installer-amd64/current/images/netboot/mini.iso | dd of=/dev/sda
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 3.  Reboot into your *Installer* configuration profile, and open the [Glish](/docs/networking/use-the-graphic-shell-glish) graphical console from the **Remote Access** tab in your Linode's Dashboard. You'll see your distribution's installer, and you can begin the install process.
 

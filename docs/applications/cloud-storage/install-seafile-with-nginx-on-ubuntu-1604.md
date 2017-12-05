@@ -3,9 +3,15 @@ author:
   name: Linode
   email: docs@linode.com
 description: 'Seafile is an open-source cross-platform file hosting tool with server applications for Linux and Windows. We will show you how to install it on Ubuntu 16.04.'
+<<<<<<< HEAD:docs/applications/cloud-storage/install-seafile-with-nginx-on-ubuntu-1604.md
 keywords: ["Seafile", " nginx", " Ubuntu 16.04", " file server", " media", " sharing"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 modified: 2017-06-21
+=======
+keywords: 'Seafile, nginx, Ubuntu 16.04, file server, media, sharing'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+modified: Wednesday, June 21st, 2017
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/applications/cloud-storage/install-seafile-with-nginx-on-ubuntu-1604.md
 modified_by:
   name: Linode
 published: 2017-05-23
@@ -19,14 +25,23 @@ Seafile is a cross-platform file hosting tool with server applications for Linux
 Seafile has [two editions](https://www.seafile.com/en/product/private_server/): a free and open source Community Edition and a paid Professional edition. While the Pro edition is free for up to 3 users, this guide will use Seafile Community Edition with nginx serving an HTTPS connection, and MySQL on the backend. This application stack could also benefit from large amounts of disk space, so consider using our [Block Storage](/docs/platform/how-to-use-block-storage-with-your-linode) service with this setup.
 
 ![Install Seafile with nginx on Ubuntu 16.04](/docs/assets/seafile-title-graphic.png)
+<<<<<<< HEAD:docs/applications/cloud-storage/install-seafile-with-nginx-on-ubuntu-1604.md
+=======
 
 
+## Prepare Ubuntu
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/applications/cloud-storage/install-seafile-with-nginx-on-ubuntu-1604.md
+
+
+<<<<<<< HEAD:docs/applications/cloud-storage/install-seafile-with-nginx-on-ubuntu-1604.md
 ## Prepare Ubuntu
 
 {{< note >}}
 This guide is written for a non-root user. Commands that require elevated privileges are prefixed with `sudo`. If you’re not familiar with the `sudo` command, see the [Linux Users and Groups](/docs/tools-reference/linux-users-and-groups) guide.
 {{< /note >}}
 
+=======
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/applications/cloud-storage/install-seafile-with-nginx-on-ubuntu-1604.md
 1.  Update the system:
 
         apt update && apt upgrade
@@ -98,7 +113,11 @@ If you don't want UFW allowing SSH on port 22 for both IPv4 and IPv6, you can de
 
         sudo mysql_secure_installation
 
+<<<<<<< HEAD:docs/applications/cloud-storage/install-seafile-with-nginx-on-ubuntu-1604.md
     For more info on MySQL, see our guide: [Install MySQL on Ubuntu](/docs/databases/mysql/install-mysql-on-ubuntu-14-04)
+=======
+	For more info on MySQL, see our guide: [Install MySQL on Ubuntu](/docs/databases/mysql/install-mysql-on-ubuntu-14-04)
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/applications/cloud-storage/install-seafile-with-nginx-on-ubuntu-1604.md
 
 ## Create a TLS Certificate for use with nginx
 

@@ -5,8 +5,13 @@ author:
 description: 'Set static IP, routes and DNS in Linux.'
 keywords: ["static", "ip address", "addresses"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+<<<<<<< HEAD
 aliases: ['networking/configuring-static-ip-interfaces/']
 modified: 2017-11-30
+=======
+alias: ['networking/configuring-static-ip-interfaces/']
+modified: Thursday, June 8th, 2017
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 modified_by:
   name: Linode
 published: 2014-07-20
@@ -60,6 +65,7 @@ Our [Network Helper](/docs/platform/network-helper) tool is enabled by default f
     [![Linode Manager: Dashboard > Configuration Profile > Edit](/docs/assets/network-helper-hilighted_small.png)](/docs/assets/network-helper-hilighted.png)
 
 
+<<<<<<< HEAD
 ## Configure Static Addressing
 
 On the **Remote Access** tab of the Linode Manager, you'll see the following information for your Linode. Use this information to configure your Linode's network settings as shown below.
@@ -70,6 +76,9 @@ On the **Remote Access** tab of the Linode Manager, you'll see the following inf
 *   DNS resolvers (if you want to use Linode's)
 
 [![Linode Manager / Remote Access](/docs/assets/1711-remote_access_ips_small.png)](/docs/assets/1710-remote_access_ips.png)
+=======
+### Arch / CoreOS Container Linux
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 Below are example configurations for the given Linux distribution. Edit the example files substituting the example IP addresses with those of your Linode, gateway and DNS nameservers. Depending on the amount of addresses you want to configure, not all lines will be necessary.
 

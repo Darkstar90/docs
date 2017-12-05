@@ -5,8 +5,13 @@ author:
 description: 'How to configure a highly available web server stack'
 keywords: ["high availability", "web server", "failover", " "]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+<<<<<<< HEAD
 published: 2016-07-12
 modified: 2017-06-07
+=======
+published: 'Tuesday, July 12th, 2016'
+modified: Tuesday, June 7th, 2017
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 modified_by:
   name: Angel Guarisma
 title: 'Host a Website with High Availability'
@@ -195,7 +200,11 @@ You will need an additional private IP address for one of your database nodes, a
 
 2.  Install the following packages on each database node:
 
+<<<<<<< HEAD
         yum install epel-release
+=======
+        yum install epel-release 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
         yum install https://www.percona.com/redir/downloads/percona-release/redhat/0.1-4/percona-release-0.1-4.noarch.rpm
         yum install Percona-XtraDB-Cluster-56 Percona-XtraDB-Cluster-shared-56
 
@@ -239,9 +248,15 @@ wsrep_sst_auth                 = sstuser:password
 
     In the line beginning with `wsrep_sst_auth`, replace `password` with a secure password of your choosing and keep it in a safe place. It will be needed later.
 
+<<<<<<< HEAD
     {{< note >}}
 The `xtrabackup-v2` service accesses the database as `sstuser`, authenticating using `password` to log into MySQL to grab backup locks for replication.
 {{< /note >}}
+=======
+    {: .note}
+    > The `xtrabackup-v2` service accesses the database as `sstuser`, authenticating using `password` to log into MySQL to grab backup locks for replication.
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
+
 
 2.  On your first database node, start MySQL as the primary component in your cluster. This process is known as *bootstrapping*; this tells the database node to start as the primary component that the other nodes in the cluster will use as a reference point when they join the cluster and sync their data:
 
@@ -263,6 +278,9 @@ The `xtrabackup-v2` service accesses the database as `sstuser`, authenticating u
 4.  On your other nodes, start MySQL normally to have them join the cluster:
 
         systemctl start mysql
+	
+   {: .note}
+   > If you want to learn more about `xtrabackup` privileges their [documentation](https://www.percona.com/doc/percona-xtrabackup/2.4/using_xtrabackup/privileges.html) is a good place to start.
 
    {{< note >}}
 If you want to learn more about `xtrabackup` privileges their [documentation](https://www.percona.com/doc/percona-xtrabackup/2.4/using_xtrabackup/privileges.html) is a good place to start.

@@ -10,7 +10,11 @@ aliases: ['web-applications/e-commerce/oscommerce/ubuntu-9-10-karmic/']
 modified: 2011-08-22
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2010-02-08
+=======
+published: 'Monday, February 8th, 2010'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'osCommerce on Ubuntu 9.10 (Karmic)'
 ---
 

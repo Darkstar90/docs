@@ -3,6 +3,7 @@ author:
     name: Alex Fornuto
     email: afornuto@linode.com
 description: 'A simple tutorial on installing a LAMP (Linux, Apache, MySQL, PHP) stack on an Arch Linux-powered server.'
+<<<<<<< HEAD:docs/web-servers/lamp/how-to-install-a-lamp-stack-on-arch-linux.md
 keywords: ["arch lamp", "arch lamp stack", "lamp linux", "arch linode", "arch linux lamp", "arch linux", "arch", "lamp", "lamp stack", "apache", "mysql", "php"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 aliases: ['lamp-guides/arch-linux/','lamp-guides/arch-linux-10-2013/','websites/lamp/lamp-server-on-arch-linux/','web-servers/lamp/lamp-server-on-arch-linux/']
@@ -10,6 +11,15 @@ modified: 2015-12-07
 modified_by:
     name: Alex Fornuto
 published: 2013-10-07
+=======
+keywords: 'arch lamp,arch lamp stack,lamp linux,arch linode,arch linux lamp,arch linux,arch,lamp,lamp stack,apache,mysql,php'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+alias: ['lamp-guides/arch-linux/','lamp-guides/arch-linux-10-2013/','websites/lamp/lamp-server-on-arch-linux/','web-servers/lamp/lamp-server-on-arch-linux/']
+modified: Monday, December 7th, 2015
+modified_by:
+    name: Alex Fornuto
+published: 'Monday, October 7th, 2013'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/web-servers/lamp/how-to-install-a-lamp-stack-on-arch-linux.md
 title: How to Install a LAMP Stack on Arch Linux
 external_resources:
  - '[Arch Linux Wiki](http://wiki.ArchLinux.org/)'

@@ -10,7 +10,11 @@ aliases: ['web-applications/e-commerce/oscommerce/debian-5-lenny/']
 modified: 2011-08-22
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2010-01-22
+=======
+published: 'Friday, January 22nd, 2010'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'osCommerce on Debian 5 (Lenny)'
 ---
 

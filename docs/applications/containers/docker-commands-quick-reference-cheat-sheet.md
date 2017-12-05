@@ -3,16 +3,31 @@ author:
   name: Linode
   email: docs@linode.com
 description: 'A quick reference cheat sheet on Docker commands for installation, containers, images and more.'
+<<<<<<< HEAD:docs/applications/containers/docker-commands-quick-reference-cheat-sheet.md
 keywords: ["docker", "quick reference", "cheat sheet", "commands"]
 aliases: ['applications/containers/docker-quick-reference-cheat-sheet/']
+=======
+keywords: 'docker,quick reference,cheat sheet,commands'
+alias: ['applications/containers/docker-quick-reference-cheat-sheet/']
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/applications/containers/docker-commands-quick-reference-cheat-sheet.md
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 modified: 2015-03-30
 modified_by:
   name: Linode
+<<<<<<< HEAD:docs/applications/containers/docker-commands-quick-reference-cheat-sheet.md
 published: 2015-03-30
 title: A Docker Commands Quick Reference Cheat Sheet
 ---
 Docker is becoming increasingly popular among software developers, operators and enterprises as a software container platform. Containers package software in a format that can run isolated on a shared operating system. Bundled with only essential libraries and settings, Docker renders lightweight, efficient self-contained systems that run identically wherever deployed.
+=======
+published: 'Monday, March 30th, 2015'
+title: A Docker Commands Quick Reference Cheat Sheet
+---
+Docker is becoming increasingly popular among software developers, operators and enterprises as a software container platform. Containers package software in a format that can run isolated on a shared operating system. Bundled with only essential libraries and settings, Docker renders lightweight, efficient self-contained systems that run identically wherever deployed.
+
+Optimizing the platform's functionality begins with mastery of requisite Docker commands, especially those listed on this cheat sheet that address installation, Hub interaction, and container and image creation and use.
+
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/applications/containers/docker-commands-quick-reference-cheat-sheet.md
 
 Optimizing the platform's functionality begins with mastery of requisite Docker commands, especially those listed on this cheat sheet that address installation, Hub interaction, and container and image creation and use.
 
@@ -35,7 +50,11 @@ Optimizing the platform's functionality begins with mastery of requisite Docker 
 | **sudo docker push** user/image | Uploads an image to Docker Hub. <br> A Docker Hub username is necessary. |
 
 
+<<<<<<< HEAD:docs/applications/containers/docker-commands-quick-reference-cheat-sheet.md
 ## Use Containers and Images
+=======
+##Use Containers and Images
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/applications/containers/docker-commands-quick-reference-cheat-sheet.md
 
 | Docker Syntax | Description |
 |:-------------|:---------|

@@ -10,7 +10,11 @@ aliases: ['email/mailman/ubuntu-9-10-karmic/']
 modified: 2011-05-17
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2010-03-19
+=======
+published: 'Friday, March 19th, 2010'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'Manage Email Lists with GNU Mailman on Ubuntu 9.10 (Karmic)'
 ---
 

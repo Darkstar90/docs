@@ -3,6 +3,7 @@ author:
   name: Linode Community
   email: docs@linode.com
 description: 'Install the Oracle Java development kit'
+<<<<<<< HEAD
 keywords: ["oracle", "java", "JDK", "install java", "ubuntu"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 aliases: ['applications/development/install-java-on-ubuntu-16-04/']
@@ -10,6 +11,15 @@ modified: 2017-05-30
 modified_by:
   name: Phil Zona
 published: 2017-05-30
+=======
+keywords: 'oracle,java,JDK,install java,ubuntu'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+alias: ['applications/development/install-java-on-ubuntu-16-04/']
+modified: 'Tuesday, May 30th, 2017'
+modified_by:
+  name: Phil Zona
+published: 'Tuesday, May 30th, 2017'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'Install Java on Ubuntu 16.04'
 contributor:
   name: Phil Zona
@@ -21,9 +31,15 @@ external_resources:
 
 ![Java](/docs/assets/Install_Oracle_Java.jpg)
 
+<<<<<<< HEAD
 [Java](https://www.oracle.com/java/index.html) is one of the world's most popular programming languages. Java can be used to create anything from software to basic web applications.
 
 In this guide, we'll install the Oracle Java development kit for building Java applications. We'll also cover OpenJDK, an open-source alternative to the Oracle Java development kit.
+=======
+[Java](https://www.oracle.com/java/index.html) is one of the world's most popular programming languages. Java can be used to create anything from software to basic web applications. 
+
+In this guide, we'll install the Oracle Java development kit for building Java applications. We'll also cover OpenJDK, an open-source alternative to the Oracle Java development kit. 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 ## Before You Begin
 
@@ -47,9 +63,14 @@ The Oracle JDK, includes a development environment for building applications wit
 
         sudo add-apt-repository ppa:webupd8team/java
 
+<<<<<<< HEAD
     {{< note >}}
 This repository is *not* maintained by Oracle. It does not contain actual Java files, but does allow us to download installers for Oracle Java software. Before using the installers, you'll be prompted to accept a license agreement, which can be found in its entirety [here](http://www.oracle.com/technetwork/java/javase/terms/license/index.html).
 {{< /note >}}
+=======
+    {: .note}
+    > This repository is *not* maintained by Oracle. It does not contain actual Java files, but does allow us to download installers for Oracle Java software. Before using the installers, you'll be prompted to accept a license agreement, which can be found in its entirety [here](http://www.oracle.com/technetwork/java/javase/terms/license/index.html).
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 3.  Update the local package cache:
 
@@ -78,7 +99,11 @@ This repository is *not* maintained by Oracle. It does not contain actual Java f
 
         sudo add-apt-repository -r ppa:webupd8team/java
 
+<<<<<<< HEAD
 ## Set Java Home Environment
+=======
+## Set JAVA_HOME
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 Many applications include code or configuration that references the `JAVA_HOME` environment variable. This variable points them to the Java binary file, allowing them to run Java code.
 
@@ -94,7 +119,11 @@ Many applications include code or configuration that references the `JAVA_HOME` 
 
         echo $JAVA_HOME
 
+<<<<<<< HEAD
     This should return the path to the Java binary.
+=======
+    This should return the path to the Java binary. 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 ## OpenJDK
 
@@ -112,6 +141,11 @@ However, if you only need to run applications that you've already downloaded, yo
 
 Note that this is unnecessary if you've installed OpenJDK, since it includes the JRE.
 
+<<<<<<< HEAD
 {{< caution >}}
 OpenJDK and Oracle Java are *not* identical. There may be licensing, performance, and stability differences, and this should be considered carefully when developing production applications.
 {{< /caution >}}
+=======
+{: .caution}
+> OpenJDK and Oracle Java are *not* identical. There may be licensing, performance, and stability differences, and this should be considered carefully when developing production applications.
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5

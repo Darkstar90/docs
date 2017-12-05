@@ -3,9 +3,15 @@ author:
   name: Angel Guarisma
   email: aguarisma@linode.com
 description: 'This guide will show you how to install Turtl, a Privacy-Conscious Cloud Storage Service, on an Ubuntu distro.'
+<<<<<<< HEAD
 keywords: ["install turtl", " cloud-based storage", " monitor system security", " ubuntu"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 modified: 2017-09-06
+=======
+keywords: 'install turtl, cloud-based storage, monitor system security, ubuntu'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+modified: Wednesday, September 6, 2017
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 modified_by:
   name: Linode
 Published: Tuesday, August 14, 2017
@@ -15,7 +21,11 @@ title: 'How to Install a Turtl Server on Ubuntu'
 
 ![Turtl_Banner](/docs/assets/turtl/Turtl.jpg)
 
+<<<<<<< HEAD
 [Turtl](https://turtlapp.com/docs) is an open-source alternative to cloud-based storage services. With a focus on privacy, Turtl offers a place to store and access your passwords, bookmarks and pictures. Hosting your own Turtl server on a secure Linode allows you to monitor your own security.
+=======
+[Turtl](https://turtlapp.com/docs) is an open-source alternative to cloud-based storage services. With a focus on privacy, Turtl offers a place to store and access your passwords, bookmarks and pictures. Hosting your own Turtl server on a secure Linode allows you to monitor your own security. 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 The Turtl server is written in Common Lisp, and the low-level encryption is derived from the Stanford Javascript Crypto Library. If encryption is important to you, read over the [encryption specifics](https://turtlapp.com/docs/security/encryption-specifics/) section of the official documentation.
 
@@ -132,8 +142,14 @@ QuickLisp is to Lisp what `pip` is to Python. Turtl loads its dependencies for t
 
 The successful execution of the above steps will open the CCL environment with the following output:
 
+<<<<<<< HEAD
     {{< output >}}
 ==== quicklisp quickstart 2015-01-28 loaded ====
+=======
+{:.output}
+~~~
+     ==== quicklisp quickstart 2015-01-28 loaded ====
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 To continue with installation, evaluate: (quicklisp-quickstart:install)
 
@@ -144,9 +160,15 @@ Welcome to Clozure Common Lisp Version 1.11-r16635  (LinuxX8664)!
 CCL is developed and maintained by Clozure Associates. For more information
 about CCL visit http://ccl.clozure.com.  To enquire about Clozure's Common Lisp
 consulting services e-mail info@clozure.com or visit http://www.clozure.com.
+<<<<<<< HEAD
 {{< /output >}}
 
 Once you are in the CCL environment, install QuickLisp using:
+=======
+~~~
+
+Once you are in the CCL enviroment, install QuickLisp using:
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
     (quicklisp-quickstart:install)
 

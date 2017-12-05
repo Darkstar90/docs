@@ -3,6 +3,7 @@ author:
   name: Linode
   email: docs@linode.com
 description: 'This guide will teach you basic setup and configuration of Linux, Nginx, MySQL and PHP on Ubuntu 16.04'
+<<<<<<< HEAD:docs/web-servers/lemp/how-to-install-a-lemp-server-on-ubuntu-16-04.md
 keywords: ["nginx", "lemp", "php", "ubuntu 16.04"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 aliases: ['websites/lemp/lemp-server-on-ubuntu-16-04/','websites/lemp/lemp-server-on-ubuntu-16-04/','web-servers/lemp/lemp-server-on-ubuntu-16-04/']
@@ -10,6 +11,15 @@ modified: 2016-05-06
 modified_by:
   name: Phil Zona
 published: 2016-05-06
+=======
+keywords: 'nginx,lemp,php,ubuntu 16.04'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+alias: ['websites/lemp/lemp-server-on-ubuntu-16-04/','websites/lemp/lemp-server-on-ubuntu-16-04/','web-servers/lemp/lemp-server-on-ubuntu-16-04/']
+modified: Friday, May 6th 2016
+modified_by:
+  name: Phil Zona
+published: 'Friday, May 6th, 2016'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5:docs/web-servers/lemp/how-to-install-a-lemp-server-on-ubuntu-16-04.md
 title: 'How to Install a LEMP (Linux, Nginx, MySQL, PHP) Stack on Ubuntu 16.04'
 external_resources:
  - '[Basic nginx Configuration](/docs/websites/nginx/basic-nginx-configuration)'

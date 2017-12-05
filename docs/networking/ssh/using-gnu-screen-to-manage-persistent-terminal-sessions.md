@@ -5,8 +5,13 @@ author:
 description: Using GNU Screen to Manage Persistent Terminal Sessions
 keywords: ["screen", "gnu screen", "terminal", "console", "linux"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+<<<<<<< HEAD
 aliases: ['linux-tools/utilities/screen/']
 modified: 2014-01-13
+=======
+alias: ['linux-tools/utilities/screen/']
+modified: Monday, January 13th, 2014
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 modified_by:
   name: Linode
 published: 2010-04-02

@@ -5,11 +5,19 @@ author:
 description: 'Install the Apache Tomcat Java servlet engine on Ubuntu 16.04 (Xenial Xerus) by following this guide.'
 keywords: ["apache tomcat ubuntu 16.04", "tomcat java", "java ubuntu 16.04", "tomcat ubuntu"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+<<<<<<< HEAD
 aliases: ['websites/frameworks/apache-tomcat-on-ubuntu-16-04/']
 modified: 2016-05-09
 modified_by:
   name: Phil Zona
 published: 2016-05-09
+=======
+alias: ['websites/frameworks/apache-tomcat-on-ubuntu-16-04/']
+modified: Monday, May 9th 2016
+modified_by:
+  name: Phil Zona
+published: 'Monday, May 9th 2016'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'Install Apache Tomcat on Ubuntu 16.04'
 external_resources:
  - '[Tomcat Home Page](http://tomcat.apache.org/)'
@@ -45,9 +53,15 @@ Install Tomcat from the Ubuntu repository:
 
     apt-get install tomcat8
 
+<<<<<<< HEAD
 {{< note >}}
 OpenJDK will be installed as a dependency when you install the `tomcat8` package. The package `openjdk-8-jre-headless` is included with the `default-jre-headless` metapackage in Ubuntu.
 {{< /note >}}
+=======
+{: .note }
+>
+> OpenJDK will be installed as a dependency when you install the `tomcat8` package. The package `openjdk-8-jre-headless` is included with the `default-jre-headless` metapackage in Ubuntu.
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 You may also want to install the `tomcat8-docs`, `tomcat8-examples`, and `tomcat8-admin` tools which provide web-based applications that document, test, and allow you to administer Tomcat. You can install all three with the following command:
 

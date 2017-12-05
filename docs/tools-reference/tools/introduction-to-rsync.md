@@ -3,6 +3,7 @@ author:
   name: Linode
   email: docs@linode.com
 description: 'This guide provides an introduction to rsync, the incremental file transfer utility.'
+<<<<<<< HEAD
 keywords: ["rsync", "backup", "back up", "copy", "file transfer", "synchronize", "sync"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 aliases: ['linux-tools/utilities/rsync/']
@@ -10,6 +11,15 @@ modified: 2017-09-14
 modified_by:
   name: Linode
 published: 2009-09-08
+=======
+keywords: 'rsync,backup,back up,copy,file transfer,synchronize,sync'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+alias: ['linux-tools/utilities/rsync/']
+modified: Thursday, September 14th, 2017
+modified_by:
+  name: Linode
+published: 'Tuesday, September 8th, 2009'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: Introduction to rsync
 external_resources:
  - '[rsync Linux Man Page](https://linux.die.net/man/1/rsync)'
@@ -51,7 +61,11 @@ To start becoming more familiar with rsync, the two commands you'll need are:
     man rsync
     rsync -help
 
+<<<<<<< HEAD
 The basic structure of an rsync command is similar to `cp` and SCP.
+=======
+The basic structure of an rsync command is similar to `cp` and SCP. 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
     rsync -[options] source destination
 
@@ -63,4 +77,8 @@ Either the source or the destination, or both, can be local or remote. If you're
 
 Remote locations are formatted like SSH or SCP commands. For example, to synchronize a local folder with one on a remote server, you'd use:
 
+<<<<<<< HEAD
     rsync -[options] /path/to/source_folder username@<remote_host>:/path/to/destination_folder
+=======
+    rsync -[options] /path/to/source_folder username@<remote_host>:/path/to/destination_folder
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5

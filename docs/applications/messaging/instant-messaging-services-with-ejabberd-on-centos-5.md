@@ -10,7 +10,11 @@ aliases: ['communications/xmpp/ejabberd/centos-5/']
 modified: 2011-08-22
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2009-12-08
+=======
+published: 'Tuesday, December 8th, 2009'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: Instant Messaging Services with ejabberd on CentOS 5
 external_resources:
  - '[Ejabberd Community Site](http://www.ejabberd.im/)'

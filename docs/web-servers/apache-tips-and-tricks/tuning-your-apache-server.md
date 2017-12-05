@@ -5,11 +5,19 @@ author:
 description: Tuning your Apache server to optimize your website.
 keywords: ["configuration", "apache", "web server", "resource tuning"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+<<<<<<< HEAD
 aliases: ['websites/apache-tips-and-tricks/tuning-your-apache-server/']
 modified: 2017-08-11
 modified_by:
   name: AMiller
 published: 2015-02-27
+=======
+alias: ['websites/apache-tips-and-tricks/tuning-your-apache-server/']
+modified: Friday, August 11, 2017
+modified_by:
+  name: AMiller
+published: 'Friday, February 27, 2015'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: Tuning Your Apache Server
 external_resources:
  - '[Apache Performance Tuning](http://httpd.apache.org/docs/2.2/misc/perf-tuning.html)'
@@ -152,6 +160,7 @@ Again, the best way to make configuration changes is to make incremental changes
 After making alterations to the Apache configuration, restart the service using `service apache restart` on Debian/Ubuntu or `/bin/systemctl reload httpd.service` on CentOS/Fedora.
 {{< /note >}}
 
+<<<<<<< HEAD
 ### StartServers
 The `StartServers` value indicates the number of child processes created at startup, and is dynamically controlled depending on load. There is often little reason to alter this number, unless your server is restarted frequently and contains a large number of requests upon reboot.
 
@@ -162,6 +171,18 @@ Sets the minimum number of idle child processes. If there are fewer processes th
 Sets the maximum number of idle child processes. If there are more idle processes than this number, then they are terminated. Unless your website is extremely busy, this number should not be set too high, since even idle processes consume resources.
 
 ### MaxClients
+=======
+###StartServers
+The `StartServers` value indicates the number of child processes created at startup, and is dynamically controlled depending on load. There is often little reason to alter this number, unless your server is restarted frequently and contains a large number of requests upon reboot.
+
+###MinSpareServers
+Sets the minimum number of idle child processes. If there are fewer processes than the `MinSpareServer` number, more processes are created at the rate of one per second on Apache 2.2 or lower. With Apache 2.4, this rate increases exponentially starting with 1 and ending with 32 children spawned per second. The benefit of this value is that when a request comes in it can take an idle thread; should a thread not be available, Apache would have to spawn a new child, taking up resources and extending the time it takes for the request to go through. Note, too many idle processes would also have an adverse effect on the server.
+
+###MaxSpareServers
+Sets the maximum number of idle child processes. If there are more idle processes than this number, then they are terminated. Unless your website is extremely busy, this number should not be set too high, since even idle processes consume resources.
+
+###MaxClients
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 The maximum amount of requests that can be served simultaneously, with any number going past the limit being queued. If this is set too low, connections sent to queue eventually time-out; however, if set too high, it causes the memory to start swapping. If this value is increased past 256, the `ServerLimit` value must also be increased.
 
 One way to calculate the best value for this is to divide the amount of RAM each Apache process uses by the amount of RAM available, leaving some room for other processes. Use [Apache2Buddy](#apache2buddy) to help determine these values, or the commands below.
@@ -178,16 +199,28 @@ To get information on memory usage:
 
 To receive a fuller view of the resources Apache is using, use the `top` command.
 
+<<<<<<< HEAD
 ### MaxRequestsPerChild
 
 This limits the number of requests a child server handles during its life. Once the limit has been hit, the child server dies. If set to 0, the child servers are set to never expire. The suggested value for this is a few thousand, to prevent memory leakage. Be aware that setting this too low can slow down the system, since creating new processes does take up resources.
 
 ### ServerLimit
+=======
+###MaxRequestsPerChild
+
+This limits the number of requests a child server handles during its life. Once the limit has been hit, the child server dies. If set to 0, the child servers are set to never expire. The suggested value for this is a few thousand, to prevent memory leakage. Be aware that setting this too low can slow down the system, since creating new processes does take up resources.
+
+###ServerLimit
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 If you need to increase the `MaxClients` above `256`, then increase your `ServerLimit` to match. To do this, add the `ServerLimit` line to your MPM code and alter the value:
 
 	ServerLimit          256
 
+<<<<<<< HEAD
 ### KeepAlive
+=======
+###KeepAlive
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 The `KeepAlive` directive, when set to `on` allows for multiple requests to come from the same TCP connection. When a KeepAlive connection is used, it counts as only one request against the `MaxRequestsPerChild` directive. This value is kept outside of your MPM, but can tie in closely to your MPM choices.

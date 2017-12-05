@@ -10,7 +10,11 @@ aliases: ['web-applications/project-management/egroupware/centos-5/']
 modified: 2011-08-22
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2010-02-03
+=======
+published: 'Wednesday, February 3rd, 2010'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: Power Team Collaboration with eGroupware on CentOS 5
 external_resources:
  - '[eGroupware Home Page](http://www.egroupware.org/)'

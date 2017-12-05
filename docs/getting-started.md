@@ -4,7 +4,11 @@ author:
   email: docs@linode.com
 description: 'This guide will help you set up your first Linode.'
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+<<<<<<< HEAD
 modified: 2017-10-10
+=======
+modified: Tuesday, September 5th, 2017
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 modified_by:
   name: Linode
 published: 2009-07-19
@@ -111,7 +115,11 @@ Communicating with your Linode is usually done using the secure shell (SSH) prot
 
 ### Find the IP Address of Your Linode
 
+<<<<<<< HEAD
 Your Linode has a unique *IP address* that identifies it to other devices and users on the internet. For the time being, you'll use the IP address to connect to your server. After you perform some of these initial configuration steps outlined in the Linode Quick Start Guides, you can use [DNS records](/docs/hosting-website#add-dns-records) to point a domain name at your server and give it a more recognizable and memorable identifier.
+=======
+Your Linode has a unique *IP address* that identifies it to other devices and users on the internet. For the time being, you'll use the IP address to connect to your server. After you perform some of these initial configuration steps outlined in the Linode Quick Start Guides, you can use [DNS records](/docs/hosting-website#sph_adding-dns-records) to point a domain name at your server and give it a more recognizable and memorable identifier.
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 Find your Linode's IP address from the [Linode Manager](https://manager.linode.com).
 
@@ -150,6 +158,7 @@ Once you have the IP address and an SSH client, you can log in via SSH. The foll
 
         root@li123-456:~#
 
+<<<<<<< HEAD
  {{< note >}}
 If you recently rebuilt an existing Linode, you might receive an error message when you try to
 reconnect via SSH. SSH clients try to match the remote host with the known keys on your desktop computer, so when you rebuild your Linode, the remote host key changes.
@@ -164,6 +173,24 @@ For Windows, PuTTY users must remove the old host IP addresses manually. PuTTY's
 
     HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys
 {{< /note >}}
+=======
+ {: .note }
+>
+> If you recently rebuilt an existing Linode, you might receive an error message when you try to
+> reconnect via SSH. SSH clients try to match the remote host with the known keys on your desktop computer, so when you rebuild your Linode, the remote host key changes.
+>
+>To reconnect via SSH, revoke the key for that IP address.
+>
+>For Linux and Mac OS X:
+>
+> ~~~
+> ssh-keygen -R 123.456.789
+> ~~~
+>
+> For Windows, PuTTY users must remove the old host IP addresses manually. PuTTY's known hosts are in the registry entry:
+>
+>     HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 ## Install Software Updates
 
@@ -175,9 +202,15 @@ Installing software updates should be performed *regularly*. If you need help re
 
     apt-get update && apt-get upgrade
 
+<<<<<<< HEAD
 {{< note >}}
 Ubuntu may prompt you when the Grub package is updated. If prompted, select `keep the local version currently installed`.
 {{< /note >}}
+=======
+{: .note }
+>
+>Ubuntu may prompt you when the Grub package is updated. If prompted, select `keep the local version currently installed`.
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 ### CentOS
 
@@ -196,7 +229,11 @@ Ubuntu may prompt you when the Grub package is updated. If prompted, select `kee
     emaint sync -a
 
 After running a sync, it may end with a message that you should upgrade Portage using a `--oneshot` emerge comand. If so, run the Portage update. Then update the rest of the system:
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
     emerge --uDN @world
 
 ### Slackware
@@ -223,12 +260,15 @@ Replace `example_hostname` with one of your choice.
     echo "example_hostname" > /etc/hostname
     hostname -F /etc/hostname
 
+<<<<<<< HEAD
 {{< note >}}
 Debian and Ubuntu include a line in their hosts file for a loopback domain by default (127.0.1.1), but even though they're closely related, the commands above to set a hostname don't change the loopback domain.
 
 The result is the message when using sudo commands: *sudo: unable to resolve host* . To fix this, add your hostname to the hosts file as shown in the last example [here](/docs/networking/dns/using-your-systems-hosts-file).
 {{< /note >}}
 
+=======
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 ### CentOS 6
 
 Replace `hostname` with one of your choice.

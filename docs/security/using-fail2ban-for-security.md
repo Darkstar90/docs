@@ -2,20 +2,31 @@
 author:
   name: Elle Krout
   email: ekrout@linode.com
+<<<<<<< HEAD
 description: 'This guide shows how to set up Fail2Ban, a log-parsing application, to monitor system logs and detect automated attacks on your Linode.'
 og_description: 'Fail2ban monitors system logs for symptoms of an automated attack, bans the IP and alerts you of the attach through email. This guide helps you set up Fail2ban to thwart automated system attacks and further secure your server.'
 keywords: ["fail2ban", "ip whitelisting", "jail.local"]
 aliases: ['tools-reference/tools/using-fail2ban-to-block-network-probes/']
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 modified: 2017-08-23
+=======
+description: 'Fail2ban monitors system logs for symptoms of an automated attack, bans the IP and alerts you of the attach through email. Use Fail2ban to thwart automated system attacks and further harden your server.'
+keywords: 'fail2ban,ip whitelisting,jail.local'
+alias: ['tools-reference/tools/using-fail2ban-to-block-network-probes/']
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+modified: Wednesday, August 23, 2017
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 modified_by:
   name: Linode
 published: 2015-10-12
 title: Use Fail2ban to Secure Your Server
 ---
 
+<<<<<<< HEAD
 ## What is Fail2Ban
 
+=======
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 Fail2ban is a log-parsing application that monitors system logs for symptoms of an automated attack on your Linode. When an attempted compromise is located, using the defined parameters, Fail2ban will add a new rule to iptables to block the IP address of the attacker, either for a set amount of time or permanently. Fail2ban can also alert you through email that an attack is occurring.
 
 ![Using Fail2ban to secure your server](/docs/assets/fail2ban_tg.png "Using Fail2ban to secure your server")
@@ -30,7 +41,11 @@ The steps required in this guide require root privileges. Be sure to run the ste
 Fail2ban is intended to be used in conjunction with an already-hardened server and should not be used as a replacement for secure firewall rules.
 {{< /caution >}}
 
+<<<<<<< HEAD
 ## Install Fail2ban
+=======
+## 1) Install Fail2ban
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 Follow the [Getting Started](/docs/getting-started) guide to configure your basic server. You may also want to review the [Securing Your Server](/docs/security/securing-your-server) guide before beginning.
 
@@ -77,12 +92,20 @@ Should you encounter the error that there is "*no directory /var/run/fail2ban to
 
         apt-get install sendmail-bin sendmail
 
+<<<<<<< HEAD
     {{< note >}}
 The current version of Sendmail in Debian Jessie has an [upstream bug](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=293017) which causes the following errors when installing `sendmail-bin`. The installation will hang for a minute, but then complete.
 Creating /etc/mail/sendmail.cf...
 ERROR: FEATURE() should be before MAILER() MAILER(`local') must appear after FEATURE(`always_add_domain')
 ERROR: FEATURE() should be before MAILER() MAILER(`local') must appear after FEATURE(`allmasquerade')
 {{< /note >}}
+=======
+    {: .note}
+    > The current version of Sendmail in Debian Jessie has an [upstream bug](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=293017) which causes the following errors when installing `sendmail-bin`. The installation will hang for a minute, but then complete.
+    > Creating /etc/mail/sendmail.cf...
+    > ERROR: FEATURE() should be before MAILER() MAILER(`local') must appear after FEATURE(`always_add_domain')
+    > ERROR: FEATURE() should be before MAILER() MAILER(`local') must appear after FEATURE(`allmasquerade')
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 ### Fedora
 
@@ -126,13 +149,21 @@ ERROR: FEATURE() should be before MAILER() MAILER(`local') must appear after FEA
         ufw allow ssh
         ufw enable
 
+<<<<<<< HEAD
 ## Configure Fail2ban
+=======
+## 2) Configure Fail2ban
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 Fail2ban reads `.conf` configuration files first, then `.local` files override any settings. Because of this, all changes to the configuration are generally done in `.local` files, leaving the `.conf` files untouched.
 
 ### Configure fail2ban.local
 
+<<<<<<< HEAD
 1.  `fail2ban.conf` contains the default configuration profile. The default settings will give you a reasonable working setup. If you want to make any changes, it's best to do it in a separate file, `fail2ban.local`, which overrides `fail2ban.conf`. Rename a copy `fail2ban.conf` to `fail2ban.local`.
+=======
+1.  `fail2ban.conf` contains the default configuration profile. The default settings will give you a reasonable working setup. If you want to make any changes, it's best to do it in a separate file, `fail2ban.local`, which overrides `fail2ban.conf`. Rename a copy `fail2ban.conf` to `fail2ban.local`. 
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
         cp /etc/fail2ban/fail2ban.conf /etc/fail2ban/fail2ban.local
 
@@ -147,7 +178,11 @@ Fail2ban reads `.conf` configuration files first, then `.local` files override a
     -   `socket`: The location of the socket file.
     -   `pidfile`: The location of the PID file.
 
+<<<<<<< HEAD
 ## Configure jail.local Settings
+=======
+## 3) Configure jail.local Settings
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 1.  The `jail.conf` file will enable Fail2ban for SSH by default for Debian and Ubuntu, but not CentOS. All other protocols and configurations (HTTP, FTP, etc.) are commented out. If you want to change this, create a `jail.local` for editing:
 
@@ -155,6 +190,7 @@ Fail2ban reads `.conf` configuration files first, then `.local` files override a
 
 2.  **If using CentOS or Fedora** you will need to change the `backend` option in `jail.local` from *auto* to *systemd*. This is not necessary on Debian 8 or Ubuntu 16.04, even though both use systemd as well.
 
+<<<<<<< HEAD
     {{< file-excerpt "/etc/fail2ban/jail.local" aconf >}}
 # "backend" specifies the backend used to get files modification.
 # Available options are "pyinotify", "gamin", "polling", "systemd" and "auto".
@@ -175,11 +211,34 @@ enabled = true
 
 {{< /file-excerpt >}}
 
+=======
+    {: .file-excerpt}
+    /etc/fail2ban/jail.local
+    :   ~~~ conf
+        # "backend" specifies the backend used to get files modification.
+        # Available options are "pyinotify", "gamin", "polling", "systemd" and "auto".
+        # This option can be overridden in each jail as well.
+
+        . . .
+        
+        backend = systemd
+        ~~~
+
+    No jails are enabled by default in CentOS 7. For example, to enable the SSH daemon jail, uncomment the following lines in `jail.local`:
+
+    {: .file-excerpt}
+    /etc/fail2ban/jail.local
+    :   ~~~ conf
+        [sshd]
+        enabled = true
+        ~~~
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 ### Whitelist IP
 
 To ignore specific IPs, add them to the `ignoreip` line. By default, this command will not ban the localhost. If you work from a single IP address often, it may be beneficial to add it to the ignore list:
 
+<<<<<<< HEAD
 {{< file-excerpt "/etc/fail2ban/jail.local" aconf >}}
 [DEFAULT]
 
@@ -194,11 +253,28 @@ ignoreip = 127.0.0.1/8 123.45.67.89
 If you wish to whitelist IPs only for certain jails, this can be done with the `fail2ban-client` command. Replace `JAIL` with the name of your jail, and `123.45.67.89` with the IP you wish to whitelist.
 
     fail2ban-client set JAIL addignoreip 123.45.67.89
+=======
+{: .file-excerpt}
+/etc/fail2ban/jail.local
+:   ~~~ conf
+    [DEFAULT]
+
+    # "ignoreip" can be an IP address, a CIDR mask or a DNS host. Fail2ban will not
+    # ban a host which matches an address in this list. Several addresses can be
+    # defined using space separator.
+    ignoreip = 127.0.0.1/8 123.45.67.89
+    ~~~
+
+If you wish to whitelist IPs only for certain jails, this can be done with the `fail2ban-client` command. Replace `JAIL` with the name of your jail, and `123.45.67.89` with the IP you wish to whitelist.
+
+    fail2ban-client set JAIL addignoreip 123.45.67.89   
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 ### Ban Time and Retry Amount
 
 Set `bantime`, `findtime`, and `maxretry` to define the circumstances and the length of time of a ban:
 
+<<<<<<< HEAD
 {{< file-excerpt "/etc/fail2ban/jail.local" aconf >}}
 # "bantime" is the number of seconds that a host is banned.
 bantime  = 600
@@ -210,6 +286,19 @@ maxretry = 3
 
 {{< /file-excerpt >}}
 
+=======
+{: .file-excerpt}
+/etc/fail2ban/jail.local
+:   ~~~ conf
+    # "bantime" is the number of seconds that a host is banned.
+    bantime  = 600
+    
+    # A host is banned if it has generated "maxretry" during the last "findtime"
+    # seconds.
+    findtime = 600
+    maxretry = 3
+    ~~~
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 -   `bantime`: The length of time in seconds for which an IP is banned. If set to a negative number, the ban will be permanent. The default value of `600` is set to ban an IP for a 10-minute duration.
 

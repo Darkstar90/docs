@@ -10,7 +10,11 @@ aliases: ['frameworks/ruby-on-rails-nginx/debian-5-lenny/','websites/ror/ruby-on
 modified: 2011-08-22
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2009-08-21
+=======
+published: 'Friday, August 21st, 2009'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'Ruby on Rails with Nginx on Debian 5 (Lenny)'
 ---
 

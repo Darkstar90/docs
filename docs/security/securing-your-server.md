@@ -6,8 +6,13 @@ description: 'This guide covers basic best practices for securing a production s
 og_description: 'This guide serves as a starting point from which to secure your Linode against unauthorized access and includes topics such as user account set up, configuring a firewall, securing SSH, and disabling unused network services.'
 keywords: ["security", "secure", "firewall", "ssh", "add user", "quick start"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+<<<<<<< HEAD
 aliases: ['securing-your-server/','security/linux-security-basics/','security/basics/','security/securing-your-server/index.cfm/']
 modified: 2017-10-27
+=======
+alias: ['securing-your-server/','security/linux-security-basics/','security/basics/','security/securing-your-server/index.cfm/']
+modified: 'Wednesday, July 12th, 2017'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 modified_by:
   name: Linode
 published: 2012-02-17
@@ -227,7 +232,11 @@ To see your Linode's running network services:
 
 The following is an example of the output given by `ss`. Note that because distributions run different services by default, your output will differ.
 
+<<<<<<< HEAD
     {{< output >}}
+=======
+~~~
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
 tcp        0      0 0.0.0.0:5355            0.0.0.0:*               LISTEN      3539/systemd-resolv
@@ -247,7 +256,11 @@ unix  2      [ ACC ]     STREAM     LISTENING     15990    3974/systemd         
 unix  2      [ ACC ]     STREAM     LISTENING     13007    1/init               /run/uuidd/request
 unix  2      [ ACC ]     STREAM     LISTENING     13010    1/init               /var/run/dbus/system_bus_socket
 unix  2      [ ACC ]     STREAM     LISTENING     8700     1/init               /run/systemd/private
+<<<<<<< HEAD
 {{< /output >}}
+=======
+~~~
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 
 `ss` tells us that services are running for [Remote Procedure Call](https://en.wikipedia.org/wiki/Open_Network_Computing_Remote_Procedure_Call) (rpc.statd and rpcbind), SSH (sshd), [NTPdate](http://support.ntp.org/bin/view/Main/SoftwareDownloads) (ntpd) and [Exim](http://www.exim.org/) (exim4).
 

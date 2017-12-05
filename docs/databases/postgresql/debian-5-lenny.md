@@ -9,7 +9,11 @@ license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 modified: 2012-10-03
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2009-09-08
+=======
+published: 'Tuesday, September 8th, 2009'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: 'Use PostgreSQL Relational Databases on Debian 5 (Lenny)'
 ---
 

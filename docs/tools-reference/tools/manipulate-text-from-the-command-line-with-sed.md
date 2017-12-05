@@ -9,7 +9,11 @@ aliases: ['linux-tools/common-commands/sed/']
 modified: 2017-03-23
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2010-07-01
+=======
+published: 'Thursday, July 1st, 2010'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: Manipulate Text from the Command Line with sed
 external_resources:
  - '[Administration Basics](/docs/using-linux/administration-basics)'

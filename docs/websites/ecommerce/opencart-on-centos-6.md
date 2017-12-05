@@ -9,7 +9,11 @@ aliases: ['web-applications/e-commerce/opencart/centos-6/']
 modified: 2011-09-20
 modified_by:
   name: Linode
+<<<<<<< HEAD
 published: 2011-09-20
+=======
+published: 'Tuesday, September 20th, 2011'
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 title: OpenCart on CentOS 6
 ---
 

@@ -5,8 +5,13 @@ author:
 description: Guides for installing and managing software on major Linux operating systems on a Linode.
 keywords: ["Linux package management", "rpm", "apt", "dpkg", "apt-get", "apt-cache", "pacman", "yum"]
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+<<<<<<< HEAD
 aliases: ['using-linux/package-management/']
 modified: 2017-02-23
+=======
+alias: ['using-linux/package-management/']
+modified: Thursday, February 23rd, 2017
+>>>>>>> cfb4ddbda8a19130b6bbff342b53154dba398ac5
 modified_by:
   name: Linode
 published: 2009-07-16
