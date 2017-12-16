@@ -63,7 +63,7 @@ With the framework in place, the configuration files can now be populated.
 
 1. Open the **nginx.conf** file with your preferred text editor, and replace the existing contents with the ones shown below. This file will now define the universal behavior of Nginx for each enabled domain. The following configuration should be a sufficient starting point for most users, and can be expanded upon if necessary.
 
-        {{< file-excerpt "/etc/nginx/conf/nginx.conf"  >}}
+{{< file-excerpt "/etc/nginx/conf/nginx.conf"  >}}
 
 # Universal configuration for all Nginx virtual sites
 
