@@ -2,6 +2,7 @@
 author:
   name: Linode
   email: docs@linode.com
+keywords: ["getting started, intro, basics, first steps"]
 description: 'This guide will help you set up your first Linode.'
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 modified: 2017-10-10
@@ -13,6 +14,7 @@ show_on_frontpage: true
 title_short: "Getting Started"
 weight: 10
 icon: "book"
+show_on_rss_feed: false
 ---
 
 Thank you for choosing Linode as your cloud hosting provider! This guide will help you sign up for an account, set up a Linux distribution, boot your Linode, and perform some basic system administration tasks.
