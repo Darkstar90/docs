@@ -34,7 +34,7 @@ Since MongoDB can require a significant amount of RAM, we recommend using a [hig
 
 - Update your system:
 
-      sudo yum update
+        sudo yum update
 
 {{< note >}}
 This guide is written for a non-root user. Commands that require elevated privileges are prefixed with `sudo`. If you’re not familiar with the `sudo` command, you can check our [Users and Groups](/docs/tools-reference/linux-users-and-groups) guide.
@@ -177,7 +177,7 @@ If you enabled role-based access control in the [Configure MongoDB](#configure-m
 
         db.createUser({user: "example-user", pwd: "password", roles:[{role: "read", db: "user-data"}, {role:"readWrite", db: "exampleDB"}]})
 
-    To create additional users, repeat Steps 6 and 7 as the administrative user, creating new usernames, passwords and roles by substituing the appropriate values.
+    To create additional users, repeat Steps 6 and 7 as the administrative user, creating new usernames, passwords and roles by substituting the appropriate values.
 
 8.  Exit the mongo shell:
 
