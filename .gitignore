@@ -1,5 +1,8 @@
 __pycache__/
+.pytest_cache/
+public/
 .cache/
+.idea/
 .scrapy
 .pynb_checkpoints
 .env

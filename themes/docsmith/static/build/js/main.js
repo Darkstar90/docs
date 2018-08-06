@@ -66,6 +66,50 @@
 
 })(jQuery);
 
+$(function() {
+    $('.disclosure-note').each(function() {
+        $(this).css("cursor", "pointer")
+            .click(function() { toggleNoteDisclosure($(this)) });
+        $(this).children('div').first()
+            .css("height", '3em')
+            .css("opacity", .5);
+    });
+});
+
+function toggleNoteDisclosure(disclosureNote) {
+    disclosureNoteTitle = disclosureNote.children('span').first();
+    arrowIcon = disclosureNoteTitle.children('img.disclosure-icon').first();
+    disclosableDiv = disclosureNoteTitle.next('div')
+    if (disclosureNote.hasClass('disclosed')) {
+        disclosableDiv.animate(
+            {
+                height: '3em',
+                opacity: .5
+            }, 
+            200,
+            function() {
+                disclosureNoteTitle.css("cursor", "pointer")
+                    .unbind('click');
+                disclosureNote.css("cursor", "pointer")
+                    .unbind('click').click(function() { toggleNoteDisclosure($(this)); });
+            });
+    }
+    else {
+        disclosableDiv.animate(
+            {
+                height: disclosableDiv.children('.height-preservation-wrapper').first().height(),
+                opacity: 1
+            }, 
+            200,
+            function() {
+                disclosureNote.css("cursor", "default")
+                    .unbind('click');
+                disclosureNoteTitle.css("cursor", "pointer")
+                    .unbind('click').click(function() { toggleNoteDisclosure($(this).parent()); });
+            });
+    }
+    disclosureNote.toggleClass('disclosed');
+}
 (function($) {
 
     Page = {
@@ -143,29 +187,34 @@
         // Fuzzy search with sensitivity set to one character
         var result = searchStore.index.search(query + '~1');
         var resultList = $('#ds-search-list');
-        resultList.empty();
+        var MAX_DEPRECATED_GUIDES = 5;
         var deprecatedResults = [];
         var hiddenGuide = [];
+        var item, doc;
+        resultList.empty();
         for (var i = 0; i < result.length; i++) {
-            var item = result[i];
+            item = result[i];
+            doc = searchStore.store[item.ref];
 
             // We could add a threshold with score, but that would not show single results with low score ("Ubuntu" being one example).
             if (i > 30) {
                 break;
             }
-
-            var title = searchStore.store[item.ref].title
+            var title = doc.h1 || doc.title
             var url = item.ref
             var badge = ''
-            var deprecated = searchStore.store[item.ref].deprecated
-            var shortguide = searchStore.store[item.ref].shortguide
+            var deprecated = doc.deprecated
+            var shortguide = doc.shortguide
             if (deprecated) {
               badge = '<span class="search-deprecated">DEPRECATED</span>'
              }
             var searchitem = '<li class="list-group-item"><a href="' + url + '">' + title + badge + '</a></li>';
+
             // Deprecated search results to end of list
             if (deprecated) {
-              deprecatedResults.push(searchitem)
+              if (deprecatedResults.length < MAX_DEPRECATED_GUIDES) {
+                deprecatedResults.push(searchitem)
+              }
             }
             else if (shortguide) {
               hiddenGuide.push(searchitem)
@@ -173,7 +222,6 @@
             else {
               resultList.append(searchitem)
             }
-            console.log(shortguide);
         }
 
         deprecatedResults.forEach(function(result) {
@@ -296,6 +344,8 @@
                         $('html,body').animate({
                             scrollTop: target.offset().top - 50
                         }, 1000);
+                        /* Change the hash location in URL */
+                        window.location.hash = this.hash;
                         return false;
                     }
                 }

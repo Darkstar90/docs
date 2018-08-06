@@ -1,6 +1,6 @@
 {
   "aliases": {
-    "elements": true,
+    "elements": false,
     "required": false,
     "type": "list",
     "description": "Other locations where this guide can be found. Should be an array of entries in the form /applications/big-data/using-big-data/"
@@ -14,6 +14,12 @@
     "type": "dict",
     "description": "First and last names of the original guide author."
   },
+  "h1_title": {
+    "elements": false,
+    "required": false,
+    "type": "text",
+    "description": "This sets the H1, but leaves the title in the metadata"
+    },
   "comments": {
     "elements": false,
     "required": false,
@@ -26,7 +32,7 @@
       "link"
     ],
     "required": false,
-    "type": "dict",
+    "type": "text",
     "description": "For freelancer guides only. First and last name of the freelancer who wrote the guide."
   },
   "deprecated": {
@@ -34,6 +40,12 @@
     "required": false,
     "type": "bool",
     "description": "If true, guide will be displayed with a deprecated tag on view and in search results. Will not be visible on main section pages but still appears on subsections."
+  },
+  "deprecated_link": {
+	"elements": false,
+	"required": false,
+	"type": "text",
+	"description": "In a deprecated guide, use this tag to include a link to the most up to date version of the guide. Must use alias-style relative links (e.g. applications/containers/using-docker. If this tag is absent in a deprecated guide, no link will be displayed"
   },
   "description": {
     "elements": false,
@@ -145,7 +157,7 @@
   "slug": {
     "elements": false,
     "required": false,
-    "type": "bool",
+    "type": "text",
     "description": "Hugo front matter variable. Specifies the tail of the output URL for this page."
   },
   "title": {
